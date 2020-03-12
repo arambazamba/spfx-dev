@@ -108,20 +108,6 @@ SPFx Basics
 
 - Working with Lookups & Taxonomy
 
-Publishing SPFx WebParts
-
-- Building & Packaging
-
-- Deploying Assets with SPFx Solutions as CAML (Fields, Content Types, Lists)
-
-- Tenant Wide Deployment
-
-- Site & Asset Deployment using Office 365 CLI
-
-- Deploying SPFx Solutions using ALM Scripts, VS Code & DevOps Pipelings
-
-- Maintaining & Updating SPFx Solutions using Office 365 CLI
-
 React Basics
 
 - What is React?
@@ -220,6 +206,20 @@ SharePoint Framework Extensions
 
 - Use Command Sets to trigger Actions
 
+Publishing SPFx WebParts
+
+- Building & Packaging
+
+- Deploying Assets with SPFx Solutions as CAML (Fields, Content Types, Lists)
+
+- Tenant Wide Deployment
+
+- Site & Asset Deployment using Office 365 CLI
+
+- Deploying SPFx Solutions using ALM Scripts, VS Code & DevOps Pipelings
+
+- Maintaining & Updating SPFx Solutions using Office 365 CLI
+
 Extending Micrsoft Teams
 
 - A Developer Introduction to Teams
@@ -231,7 +231,6 @@ Extending Micrsoft Teams
 - Overview Tabs, Bots, Connectors, Cards
 
 - Implementing Tabs using SharePoint Framework
-
 
 # Prerequisites
 
