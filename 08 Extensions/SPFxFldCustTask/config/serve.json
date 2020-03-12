@@ -1,29 +1,29 @@
 {
-	"$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
-	"port": 4321,
-	"https": true,
-	"serveConfigurations": {
-		"default": {
-			"pageUrl": "https://integrationsonline.sharepoint.com/sites/DevGrp/Lists/Taskslist/AllItems.aspx",
-			"fieldCustomizers": {
-				"Priority": {
-					"id": "1c3edc8d-bd57-4ab6-bc08-147a78aec389",
-					"properties": {
-						"sampleText": "Value"
-					}
-				}
-			}
-		},
-		"tasksBar": {
-			"pageUrl": "https://integrationsonline.sharepoint.com/sites/DevGrp/Lists/Taskslist/AllItems.aspx",
-			"fieldCustomizers": {
-				"Priority": {
-					"id": "1c3edc8d-bd57-4ab6-bc08-147a78aec389",
-					"properties": {
-						"sampleText": "Value"
-					}
-				}
-			}
-		}
-	}
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/DevGrp/Lists/Tasklist/AllItems.aspx",
+      "fieldCustomizers": {
+        "Priority": {
+          "id": "1c3edc8d-bd57-4ab6-bc08-147a78aec389",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    },
+    "tasksBar": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/DevGrp/Lists/Tasklist/AllItems.aspx",
+      "fieldCustomizers": {
+        "Priority": {
+          "id": "1c3edc8d-bd57-4ab6-bc08-147a78aec389",
+          "properties": {
+            "sampleText": "Value"
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,17 +1,18 @@
 .TasksBar {
-	.cell {
-		background-color: "[theme:themePrimary, default:#e5e5e5]";
-		display: 'inline-block';
-	}
+  .cell {
+    background-color: "[theme:themePrimary, default:#e5e5e5]";
+    display: "inline-block";
+  }
 }
 
 .low {
-	color: 'darkolivegreen';
+  color: "darkolivegreen";
+  font-weight: bold;
 }
 .normal {
-	color: rgb(255, 106, 0);
+  color: rgb(255, 106, 0);
 }
 .high {
-	color: #f00;
-	background-color: lawngreen;
+  color: #f00;
+  background-color: lawngreen;
 }
