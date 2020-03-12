@@ -9,10 +9,26 @@
           "manifest": "./src/extensions/placeholderSample/PlaceholderSampleApplicationCustomizer.manifest.json"
         }
       ]
+    },
+    "toast-customizer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/toastCustomizer/ToastCustomizerApplicationCustomizer.js",
+          "manifest": "./src/extensions/toastCustomizer/ToastCustomizerApplicationCustomizer.manifest.json"
+        }
+      ]
     }
   },
-  "externals": {},
+  "externals": {
+    "jquery": {
+      "path": "https://code.jquery.com/jquery-2.1.1.min.js",
+      "globalName": "jquery"
+    },
+    "toastr": "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js",
+    "sp-pnp-js": "node_modules/sp-pnp-js/dist/pnp.min.js"
+  },
   "localizedResources": {
-    "PlaceholderSampleApplicationCustomizerStrings": "lib/extensions/placeholderSample/loc/{locale}.js"
+    "PlaceholderSampleApplicationCustomizerStrings": "lib/extensions/placeholderSample/loc/{locale}.js",
+    "ToastCustomizerApplicationCustomizerStrings": "lib/extensions/toastCustomizer/loc/{locale}.js"
   }
 }

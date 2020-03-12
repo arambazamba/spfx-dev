@@ -1,42 +1,39 @@
 {
-	"$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
-	"version": "2.0",
-	"bundles": {
-		"toaster-customizer-application-customizer": {
-			"components": [
-				{
-					"entrypoint": "./lib/extensions/toasterCustomizer/ToasterCustomizerApplicationCustomizer.js",
-					"manifest": "./src/extensions/toasterCustomizer/ToasterCustomizerApplicationCustomizer.manifest.json"
-				}
-			]
-		},
-		"placehoder-sample-application-customizer": {
-			"components": [
-				{
-					"entrypoint": "./lib/extensions/placehoderSample/PlacehoderSampleApplicationCustomizer.js",
-					"manifest": "./src/extensions/placehoderSample/PlacehoderSampleApplicationCustomizer.manifest.json"
-				}
-			]
-		}
-	},
-	"externals": {
-		"jquery": {
-			"path": "https://code.jquery.com/jquery-2.1.1.min.js",
-			"globalName": "jquery"
-		},
-		"toastr": "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js",
-		"sp-pnp-js": "node_modules/sp-pnp-js/dist/pnp.min.js",
-		"simpleWeather": {
-			"path": "https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js",
-			"globalName": "simpleWeather",
-			"globalDependencies": [ "jquery" ]
-		}
-	},
-	"localizedResources": {
-		"ToasterCustomizerApplicationCustomizerStrings": "lib/extensions/toasterCustomizer/loc/{locale}.js",
-		"PlacehoderSampleApplicationCustomizerStrings": "lib/extensions/placehoderSample/loc/{locale}.js",
-		"LvCmdSetCloneCommandSetStrings": "lib/extensions/lvCmdSetClone/loc/{locale}.js",
-		"FldCustoizerWeatherFieldCustomizerStrings": "lib/extensions/fldCustoizerWeather/loc/{locale}.js",
-		"FldCustomizerTglReactFieldCustomizerStrings": "lib/extensions/fldCustomizerTglReact/loc/{locale}.js"
-	}
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "toaster-customizer-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/toasterCustomizer/ToasterCustomizerApplicationCustomizer.js",
+          "manifest": "./src/extensions/toasterCustomizer/ToasterCustomizerApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "placehoder-sample-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/placehoderSample/PlacehoderSampleApplicationCustomizer.js",
+          "manifest": "./src/extensions/placehoderSample/PlacehoderSampleApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "jquery": {
+      "path": "https://code.jquery.com/jquery-2.1.1.min.js",
+      "globalName": "jquery"
+    },
+    "toastr": "https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js",
+    "sp-pnp-js": "node_modules/sp-pnp-js/dist/pnp.min.js",
+    "simpleWeather": {
+      "path": "https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js",
+      "globalName": "simpleWeather",
+      "globalDependencies": ["jquery"]
+    }
+  },
+  "localizedResources": {
+    "ToasterCustomizerApplicationCustomizerStrings": "lib/extensions/toasterCustomizer/loc/{locale}.js",
+    "PlacehoderSampleApplicationCustomizerStrings": "lib/extensions/placehoderSample/loc/{locale}.js"
+  }
 }

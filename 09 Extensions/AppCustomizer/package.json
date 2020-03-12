@@ -18,7 +18,9 @@
     "@microsoft/sp-dialog": "1.10.0",
     "@microsoft/sp-office-ui-fabric-core": "^1.10.0",
     "@types/es6-promise": "0.0.33",
-    "@types/webpack-env": "1.13.1"
+    "@types/webpack-env": "1.13.1",
+    "sp-pnp-js": "^3.0.10",
+    "toastr": "^2.1.4"
   },
   "devDependencies": {
     "@microsoft/sp-build-web": "1.10.0",

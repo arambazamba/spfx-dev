@@ -6,11 +6,10 @@
     "default": {
       "pageUrl": "https://integrationsonline.sharepoint.com/sites/DevGrp/SitePages/Home.aspx",
       "customActions": {
-        "53a3f450-8670-4d87-88bd-370cb1c369c7": {
+        "a5c6842d-e34e-4dec-9354-73aa9f144948": {
           "location": "ClientSideExtension.ApplicationCustomizer",
           "properties": {
-            "Top": "Top area of the page",
-            "Bottom": "Bottom area in the page"
+            "testMessage": "Test message"
           }
         }
       }
@@ -23,6 +22,17 @@
           "properties": {
             "Top": "Top area of the page",
             "Bottom": "Bottom area in the page"
+          }
+        }
+      }
+    },
+    "toastCustomizer": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/DevGrp/SitePages/Home.aspx",
+      "customActions": {
+        "a5c6842d-e34e-4dec-9354-73aa9f144948": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
           }
         }
       }
