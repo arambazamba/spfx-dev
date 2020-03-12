@@ -1,6 +1,0 @@
-Object.defineProperty(exports, "__esModule", { value: true });
-exports['5488f211-1e21-42ae-85b1-da871d3e4dc4'] = require('D:\\SPFxDevelopment\\07 JS Frameworks\\03 Angular\\04 Angular Elements\\angularelements-helloworld\\lib\\webparts\\helloAngular\\HelloAngularWebPart.js');
-exports['10260958-8a90-4562-9927-63504d229b7f'] = require('D:\\SPFxDevelopment\\07 JS Frameworks\\03 Angular\\04 Angular Elements\\angularelements-helloworld\\lib\\webparts\\helloSharePoint\\HelloSharePointWebPart.js');
-exports['893b2dc0-3a3b-4c81-a9fd-beb65e4636e9'] = require('D:\\SPFxDevelopment\\07 JS Frameworks\\03 Angular\\04 Angular Elements\\angularelements-helloworld\\lib\\webparts\\helloGraph\\HelloGraphWebPart.js');
-exports['39ae6319-d894-4dba-9d17-3d323b51e92b'] = require('D:\\SPFxDevelopment\\07 JS Frameworks\\03 Angular\\04 Angular Elements\\angularelements-helloworld\\lib\\webparts\\helloPnPjsSharePoint\\HelloPnPjsSharePointWebPart.js');
-exports['a6239324-68c5-487c-9b14-f9b9693224da'] = require('D:\\SPFxDevelopment\\07 JS Frameworks\\03 Angular\\04 Angular Elements\\angularelements-helloworld\\lib\\webparts\\helloPnPjsGraph\\HelloPnPjsGraphWebPart.js');

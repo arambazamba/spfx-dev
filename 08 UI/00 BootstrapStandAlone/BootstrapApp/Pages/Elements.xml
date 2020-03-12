@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <Module Name="Pages">
-    <File Path="Pages\Default.aspx" Url="Pages/Default.aspx" ReplaceContent="TRUE" />
-    <File Path="Pages\Form.aspx" Url="Pages/Form.aspx" ReplaceContent="TRUE" />
-    <File Path="Pages\Modal.aspx" Url="Pages/Modal.aspx" ReplaceContent="TRUE" />
-    <File Path="Pages\Table.aspx" Url="Pages/Table.aspx" ReplaceContent="TRUE" />
-  </Module>
-</Elements>
