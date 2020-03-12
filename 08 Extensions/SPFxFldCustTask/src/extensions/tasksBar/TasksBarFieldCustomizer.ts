@@ -8,11 +8,6 @@ import {
 import * as strings from "TasksBarFieldCustomizerStrings";
 import styles from "./TasksBarFieldCustomizer.module.scss";
 
-/**
- * If your field customizer uses the ClientSideComponentProperties JSON input,
- * it will be deserialized into the BaseExtension.properties object.
- * You can define an interface to describe it.
- */
 export interface ITasksBarFieldCustomizerProperties {}
 
 const LOG_SOURCE: string = "TasksBarFieldCustomizer";
@@ -36,10 +31,8 @@ export default class TasksBarFieldCustomizer extends BaseFieldCustomizer<
 
   @override
   public onRenderCell(event: IFieldCustomizerCellEventParameters): void {
-    //Get the value of the column
     event.domElement.innerText = event.fieldValue + " edited";
 
-    // Format each cell with the appropriate color based on the Priority column value
     if (this.context.field.internalName === "Priority") {
       switch (event.fieldValue) {
         case "(1) Hoch":
