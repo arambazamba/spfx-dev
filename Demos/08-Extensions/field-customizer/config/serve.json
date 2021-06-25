@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Lists/Work%20Status/AllItems.aspx",
+      "fieldCustomizers": {
+        "PercentComplete": {
+          "id": "6c6d065e-c763-4f3f-b68e-be70097d8bf6",
+          "properties": {
+            "greenMinLimit": "85",
+            "yellowMinLimit": "70"
+          }
+        }
+      }
+    },
+    "taskPercentage": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Lists/Work%20Status/AllItems.aspx",
+      "fieldCustomizers": {
+        "PercentComplete": {
+          "id": "6c6d065e-c763-4f3f-b68e-be70097d8bf6",
+          "properties": {
+            "greenMinLimit": "85",
+            "yellowMinLimit": "70"
+          }
+        }
+      }
+    }
+  }
+}

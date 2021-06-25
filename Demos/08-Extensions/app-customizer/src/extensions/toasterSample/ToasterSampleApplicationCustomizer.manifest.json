@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-extension-manifest.schema.json",
+
+  "id": "72c7fdaa-0a1b-4093-a606-b429f7499690",
+  "alias": "ToasterSampleApplicationCustomizer",
+  "componentType": "Extension",
+  "extensionType": "ApplicationCustomizer",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false
+}

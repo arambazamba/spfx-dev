@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Shared%20Documents/Forms/AllItems.aspx",
+      "customActions": {
+        "b792d8d6-0d18-45c9-872c-6e7bdee85961": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    },
+    "helloWorld": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Shared%20Documents/Forms/AllItems.aspx",
+      "customActions": {
+        "b792d8d6-0d18-45c9-872c-6e7bdee85961": {
+          "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
+          "properties": {
+            "sampleTextOne": "One item is selected in the list",
+            "sampleTextTwo": "This command is always visible."
+          }
+        }
+      }
+    }
+  }
+}

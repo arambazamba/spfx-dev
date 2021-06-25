@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/SitePages/Home.aspx",
+      "customActions": {
+        "8c8c1ffa-7cba-4182-96f4-7c7710cab056": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page",
+            "Bottom": "Bottom area in the page"
+          }
+        }
+      }
+    },
+    "placeholderSample": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/SitePages/Home.aspx",
+      "customActions": {
+        "8c8c1ffa-7cba-4182-96f4-7c7710cab056": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page",
+            "Bottom": "Bottom area in the page"
+          }
+        }
+      }
+    },
+    "toasterSample": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/SitePages/Home.aspx",
+      "customActions": {
+        "72c7fdaa-0a1b-4093-a606-b429f7499690": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
+    }
+  }
+}

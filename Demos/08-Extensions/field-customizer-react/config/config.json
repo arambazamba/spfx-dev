@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "is-active-toggle-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/isActiveToggle/IsActiveToggleFieldCustomizer.js",
+          "manifest": "./src/extensions/isActiveToggle/IsActiveToggleFieldCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "IsActiveToggleFieldCustomizerStrings": "lib/extensions/isActiveToggle/loc/{locale}.js"
+  }
+}

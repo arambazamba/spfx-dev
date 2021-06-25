@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Lists/FldCustomizerToggle/AllItems.aspx",
+      "fieldCustomizers": {
+        "IsActive": {
+          "id": "1e990e42-81de-4d30-801e-1d9d664b46ae",
+          "properties": {}
+        }
+      }
+    },
+    "isActiveToggle": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Lists/FldCustomizerToggle/AllItems.aspx",
+      "fieldCustomizers": {
+        "IsActive": {
+          "id": "1e990e42-81de-4d30-801e-1d9d664b46ae",
+          "properties": {}
+        }
+      }
+    }
+  }
+}

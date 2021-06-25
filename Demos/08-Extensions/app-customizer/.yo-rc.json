@@ -1,0 +1,13 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.11.0",
+    "libraryName": "spfx-app-customizer",
+    "libraryId": "5c5527e4-669b-4d87-bb6f-2415fae53560",
+    "environment": "spo",
+    "packageManager": "npm",
+    "isCreatingSolution": false,
+    "isDomainIsolated": false,
+    "componentType": "extension",
+    "extensionType": "ApplicationCustomizer"
+  }
+}

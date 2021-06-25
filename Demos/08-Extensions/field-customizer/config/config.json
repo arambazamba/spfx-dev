@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "task-percentage-field-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/taskPercentage/TaskPercentageFieldCustomizer.js",
+          "manifest": "./src/extensions/taskPercentage/TaskPercentageFieldCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TaskPercentageFieldCustomizerStrings": "lib/extensions/taskPercentage/loc/{locale}.js"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "csom-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/csomWp/CsomWpWebPart.js",
+          "manifest": "./src/webparts/csomWp/CsomWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {
+    "sp-init": {
+      "path": "https://integrationsonline.sharepoint.com/_layouts/15/init.js",
+      "globalName": "$_global_init"
+    },
+    "microsoft-ajax": {
+      "path": "https://integrationsonline.sharepoint.com/_layouts/15/MicrosoftAjax.js",
+      "globalName": "Sys",
+      "globalDependencies": ["sp-init"]
+    },
+    "sp-runtime": {
+      "path": "https://integrationsonline.sharepoint.com/_layouts/15/SP.Runtime.js",
+      "globalName": "SP",
+      "globalDependencies": ["microsoft-ajax"]
+    },
+    "sharepoint": {
+      "path": "https://integrationsonline.sharepoint.com/_layouts/15/SP.js",
+      "globalName": "SP",
+      "globalDependencies": ["sp-runtime"]
+    }
+  },
+  "localizedResources": {
+    "CsomWpWebPartStrings": "lib/webparts/csomWp/loc/{locale}.js"
+  }
+}

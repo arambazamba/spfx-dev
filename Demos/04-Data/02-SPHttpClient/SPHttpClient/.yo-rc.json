@@ -1,0 +1,12 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.12.1",
+    "libraryName": "sp-http-client",
+    "libraryId": "0fd093e9-53a6-4cc1-b0b3-90c147fe0a31",
+    "environment": "spo",
+    "packageManager": "npm",
+    "isCreatingSolution": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-fx-rest-api-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spFxRestApi/SpFxRestApiWebPart.js",
+          "manifest": "./src/webparts/spFxRestApi/SpFxRestApiWebPart.manifest.json"
+        }
+      ]
+    },
+    "domain-isolated-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/domainIsolatedWp/DomainIsolatedWpWebPart.js",
+          "manifest": "./src/webparts/domainIsolatedWp/DomainIsolatedWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpFxRestApiWebPartStrings": "lib/webparts/spFxRestApi/loc/{locale}.js",
+    "DomainIsolatedWpWebPartStrings": "lib/webparts/domainIsolatedWp/loc/{locale}.js"
+  }
+}

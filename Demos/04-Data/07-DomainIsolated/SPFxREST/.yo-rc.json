@@ -1,0 +1,12 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "version": "1.11.0",
+    "libraryName": "sp-fx-rest",
+    "libraryId": "0972502c-5ec4-4d74-a86b-3ccd6aa0b8fe",
+    "environment": "spo",
+    "packageManager": "npm",
+    "isCreatingSolution": false,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

@@ -1,8 +1,0 @@
-{
-  "@microsoft/generator-sharepoint": {
-    "version": "1.4.1",
-    "libraryName": "basic-crud",
-    "libraryId": "0a7f1f7a-4b06-402f-a80e-29ac9cadb0f6",
-    "environment": "spo"
-  }
-}
