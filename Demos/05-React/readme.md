@@ -6,9 +6,19 @@
 
 npm install -g create-react-app
 
-create-react-app first-app --typescript
+Create a class based project:
 
+```
+create-react-app skills-classes --typescript --scripts-version react-scripts@^2
+```
+
+Execute project:
+
+```
 npm run start
+```
+
+Running App:
 
 ![alt first-app](_images/firstapp.png)
 
