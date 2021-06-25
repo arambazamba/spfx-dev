@@ -1,0 +1,30 @@
+h1,
+h2 {
+  font-family: Lato;
+}
+
+ul li {
+  cursor: pointer;
+}
+
+.mainMenu {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem;
+  background-color: lavender;
+  min-width: 950px;
+}
+
+.mainMenu div {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.signPad {
+  background-color: lightblue;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
