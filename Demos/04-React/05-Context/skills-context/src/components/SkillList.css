@@ -1,0 +1,35 @@
+.container {
+	clear: both;
+	width: 300px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+}
+
+.lblNewSkill {
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.skillContainer {
+	display: flex;
+	flex-direction: column;
+	margin: 15px auto 0 auto;
+	padding: 0;
+}
+/* 
+.skillRow {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0.2rem 0;
+	padding: 0.3rem;
+	background-color: lightblue;
+	border-radius: 10px;
+} */
+
+.skillRow:hover {
+	background-color: lightpink;
+}
