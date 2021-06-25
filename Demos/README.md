@@ -1,4 +1,4 @@
-# Developing SharePoint Framework Solutions (SPFx) for SharePoint 2019, Office 365 & Teams
+# Developing SharePoint Framework Solutions (SPFx)
 
 ## Kursbeschreibung
 
