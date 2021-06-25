@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "sp-fx-props-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spFxProps/SpFxPropsWebPart.js",
+          "manifest": "./src/webparts/spFxProps/SpFxPropsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpFxPropsWebPartStrings": "lib/webparts/spFxProps/loc/{locale}.js"
+  }
+}
