@@ -1,8 +1,8 @@
 {
   "@microsoft/generator-sharepoint": {
-    "version": "1.11.0",
+    "version": "1.12.1",
     "libraryName": "csom-wp",
-    "libraryId": "d541dda6-fc13-4395-b04c-5c8ab2878e63",
+    "libraryId": "2c274c1f-64ad-4d39-95d0-7a528ee31169",
     "environment": "spo",
     "packageManager": "npm",
     "isCreatingSolution": true,
