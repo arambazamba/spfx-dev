@@ -49,7 +49,7 @@ To install Software run the script `setup-ms-600.ps1` from an elevated PowerShel
 
 ```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force;
-Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/arambazamba/ms-600/master/Setup/setup-ms-600.ps1'))
+Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/arambazamba/spfx-dev/master/Setup/setup-spfx-dev.ps1'))
 ```
 
 > Note: This script will run for approx 20 min. No need to wait! In the meantime you can continue to fork and clone my repo as described in the next section.
@@ -78,7 +78,7 @@ The forking-workflow allows you to commit your changes to your fork of the repo 
 Clone Class Repo:
 
 ```bash
-git clone https://github.com/Student01/ms-600
+git clone https://github.com/Student01/spfx-dev
 ```
 
-> Note: If you have forked the class repo clone your own fork, otherwise use https://github.com/ARambazamba/ms-600
+> Note: If you have forked the class repo clone your own fork, otherwise use https://github.com/ARambazamba/spfx-dev
