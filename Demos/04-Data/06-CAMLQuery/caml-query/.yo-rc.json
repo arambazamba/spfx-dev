@@ -1,8 +1,8 @@
 {
   "@microsoft/generator-sharepoint": {
-    "version": "1.11.0",
-    "libraryName": "csom-caml-query",
-    "libraryId": "b9df8efa-7353-47c4-b099-a05d3d4356ad",
+    "version": "1.12.1",
+    "libraryName": "caml-query",
+    "libraryId": "cc261c9b-be71-4504-a415-3fc8fa3e7473",
     "environment": "spo",
     "packageManager": "npm",
     "isCreatingSolution": true,

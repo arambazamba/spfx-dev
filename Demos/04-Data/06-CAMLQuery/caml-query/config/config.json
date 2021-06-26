@@ -2,19 +2,19 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "csom-caml-query-wp-web-part": {
+    "caml-query-wp-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/csomCamlQueryWp/CsomCamlQueryWpWebPart.js",
-          "manifest": "./src/webparts/csomCamlQueryWp/CsomCamlQueryWpWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/camlQueryWp/CamlQueryWpWebPart.js",
+          "manifest": "./src/webparts/camlQueryWp/CamlQueryWpWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {
     "sp-init": {
-      "path": "https://integrationsonline.sharepoint.com/_layouts/15/init.js",
-      "globalName": "$_global_init"
+    "path": "https://integrationsonline.sharepoint.com/_layouts/15/init.js",
+    "globalName": "$_global_init"
     },
     "microsoft-ajax": {
       "path": "https://integrationsonline.sharepoint.com/_layouts/15/MicrosoftAjax.js",
@@ -33,6 +33,6 @@
     }
   },
   "localizedResources": {
-    "CsomCamlQueryWpWebPartStrings": "lib/webparts/csomCamlQueryWp/loc/{locale}.js"
+    "CamlQueryWpWebPartStrings": "lib/webparts/camlQueryWp/loc/{locale}.js"
   }
 }

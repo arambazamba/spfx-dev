@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "csom-caml-query-client-side-solution",
-    "id": "b9df8efa-7353-47c4-b099-a05d3d4356ad",
+    "name": "caml-query-client-side-solution",
+    "id": "cc261c9b-be71-4504-a415-3fc8fa3e7473",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
@@ -15,6 +15,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/csom-caml-query.sppkg"
+    "zippedPackage": "solution/caml-query.sppkg"
   }
 }
