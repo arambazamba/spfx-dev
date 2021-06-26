@@ -232,50 +232,6 @@ Extending Micrsoft Teams
 
 - Implementing Tabs using SharePoint Framework
 
-# Prerequisites
-
-Basic understanding of using Git. Intro can be found [here](00%20Git/readme.md)
-
-Basic understanding of using VS Code. Intro can be found [here](00%20VSCode/)
-
-## Environment Setup
-
-[O365 Tenant Setup](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
-
-[Developer PC Setup](01%20Intro/readme.md)
-
-# Troubleshooting
-
-[Fix potential SSL Issue with Node 8](https://github.com/SharePoint/sp-dev-docs/issues/1002)
-
-Go to `Control Panel` > `Edit System Environment Variables` > Reboot VM
-
-![NoHttp2](_Images/noHttp2.png)
-
-## Docker Support
-
-If you would like to develop using Docker use this `dockerfile`
-
-```
-FROM node:8.12.0
-
-EXPOSE 5432 4321 35729
-
-RUN npm i -g gulp yo @microsoft/generator-sharepoint@1.7.1
-
-VOLUME /usr/app/spfx
-WORKDIR /usr/app/spfx
-RUN useradd --create-home --shell /bin/bash spfx && \
-    usermod -aG sudo spfx && \
-    chown -R spfx:spfx /usr/app/spfx
-
-USER spfx
-
-CMD /bin/bash
-```
-
-# Ressources
-
 [SharePoint Framework Client-Side Web Part Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-webparts)
 
 [SharePoint Framework Extensions Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-extensions)
