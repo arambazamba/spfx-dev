@@ -1,4 +1,4 @@
-# Develop Solutions using SharePoint Framework (SPFx)
+# Developing SharePoint Framework Solutions (SPFx)
 
 Companion Material for Class Delivery by [Alexander Pajer](https://www.integrations.at/kontakt.aspx) containing:
 
