@@ -30,12 +30,12 @@ Use [Postman](https://www.getpostman.com/)
 
 as an Alternative you can use [SP REST Client](https://marketplace.visualstudio.com/items?itemName=s-kainet.rest-client)
 
-## Office CLI
+## CLI for Microsoft 365
 
-Install [Office CLI](https://pnp.github.io/office365-cli/)
+Install [CLI for Microsoft 365](https://pnp.github.io/cli-microsoft365/)
 
 ```
-npm i -g @pnp/office365-cli
+npm i -g @pnp/cli-microsoft365
 ```
 
 [JMESPath Documentation](http://jmespath.org/)

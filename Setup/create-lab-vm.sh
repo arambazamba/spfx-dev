@@ -1,9 +1,9 @@
 rnd=$RANDOM
 loc=westeurope
-grp=ms600-lab
+grp=spfx-lab
 vmname=labvm-$rnd
-user=ms600labadmin
-pwd=Lab@dmin1233
+user=spfxlabadmin
+pwd=Lab@dmin1234
 
 az group create -n $grp -l $loc
 
