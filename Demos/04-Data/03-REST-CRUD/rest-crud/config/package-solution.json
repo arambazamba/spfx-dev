@@ -1,11 +1,10 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "basic-crud-client-side-solution",
-    "id": "c45143fc-af0d-4916-8d20-e0a36724bc89",
+    "name": "rest-crud-client-side-solution",
+    "id": "380f2146-84e4-4962-9612-18d427246d9c",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
-    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
       "name": "",
@@ -16,6 +15,6 @@
     }
   },
   "paths": {
-    "zippedPackage": "solution/basic-crud.sppkg"
+    "zippedPackage": "solution/rest-crud.sppkg"
   }
 }
