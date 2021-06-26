@@ -5,7 +5,7 @@ This is a semin-automated guide for a Azure Lab VM Setup. Feel free to automate 
 Execute Azure CLI script `create-lab-vm.sh` in [Cloud Shell](../Tooling/04-CLI/):
 
 ```bash
-curl https://raw.githubusercontent.com/arambazamba/ms-600/master/Setup/create-lab-vm.sh | bash
+curl https://raw.githubusercontent.com/arambazamba/spfx-dev/master/Setup/create-lab-vm.sh | bash
 ```
 
 ![create-labvm](_images/create-lab-vm.jpg)
@@ -43,7 +43,7 @@ Accept Settings:
 
 ## Install Software
 
-To install Software run the script `setup-ms-600.ps1` from an elevated PowerShell prompt:
+To install Software run the script `setup-spfx-dev.ps1` from an elevated PowerShell prompt:
 
 ![run-as](_images/run-as.jpg)
 
