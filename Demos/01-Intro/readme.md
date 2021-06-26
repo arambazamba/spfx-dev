@@ -1,22 +1,24 @@
 # Requirements
 
-Install [VS Code](https://code.visualstudio.com/download)
+- Install [VS Code](https://code.visualstudio.com/download)
+- Install [VS Code Powershell Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
+- Install [NVM Windows](https://github.com/coreybutler/nvm-windows)
+- Install [Node Version 12.x](https://nodejs.org/en/download/releases/) using nvm:
 
-Install [VS Code Powershell Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.PowerShell)
-
-Install [NVM Windows](https://github.com/coreybutler/nvm-windows)
-
-Install [Node Version 8.x](https://nodejs.org/en/download/releases/)
-
-```
-nvm install 8.15.1
-```
+    ```
+    nvm install 12.20.0
+    ```
 # Machine Setup for SPFx Dev
 
 ```
 npm install -g yo gulp
 npm install -g @microsoft/generator-sharepoint
 npm install -g @pnp/generator-spfx
+```
+
+To trust the dev certificate run from within your first project:
+
+```
 gulp trust-dev-cert
 ```
 
