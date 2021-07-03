@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "skills-functional-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/skillsFunctionalWp/SkillsFunctionalWpWebPart.js",
+          "manifest": "./src/webparts/skillsFunctionalWp/SkillsFunctionalWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SkillsFunctionalWpWebPartStrings": "lib/webparts/skillsFunctionalWp/loc/{locale}.js"
+  }
+}
