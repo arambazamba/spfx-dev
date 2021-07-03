@@ -1,9 +1,14 @@
-import React from 'react';
+import { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Greeter } from './components/greeter/greeter';
+import { SkillList } from './components/skill-list/skill-list';
+
+const skillData = require('./skills.json');
 
 function App() {
+
+  const [skills, setSkills] = useState(skillData)
 
   const user = { firstName: "SPFx", lastName: "Developer" };
 
@@ -15,7 +20,7 @@ function App() {
           </div>
           <div className="App-intro">
             <Greeter user={user} />
-            {/* <SkillList /> */}
+            <SkillList skills={skills} />
           </div>
         </div>
     

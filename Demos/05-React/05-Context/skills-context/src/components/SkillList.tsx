@@ -1,10 +1,9 @@
 import * as React from "react";
-import "./SkillList.css";
-import { Skill } from "../skill";
+import { SkillsCtx } from "../skills-context";
 import AddSkill from "./AddSkill";
-import SkillItem from "./SkillItem";
 import SkillFilter from "./SkillFilter";
-import { IContext, SkillsCtx } from "../skills-context";
+import SkillItem from "./SkillItem";
+import "./SkillList.css";
 
 export interface SkillListProps {}
 
