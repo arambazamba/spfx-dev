@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Skill } from '../../skill';
 import './skillitem.css';
 
-export interface Props {
+export interface SkillItemProps {
 	item: Skill;
 	removeSkill(skill: Skill): void;
 	toggleComplete(id: number): void;
@@ -12,8 +12,8 @@ export interface State {
 	item: Skill;
 }
 
-export default class SkillItem extends React.Component<Props, any> {
-	constructor(props: Props) {
+export default class SkillItem extends React.Component<SkillItemProps, any> {
+	constructor(props: SkillItemProps) {
 		super(props);
 		// this.state = {
 		// 	item: this.props.item
