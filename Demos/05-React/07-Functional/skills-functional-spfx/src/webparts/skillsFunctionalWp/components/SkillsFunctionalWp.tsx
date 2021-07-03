@@ -1,25 +1,38 @@
 import * as React from 'react';
-import styles from './SkillsFunctionalWp.module.scss';
+import { useState, useEffect, FC } from 'react';
 import { ISkillsFunctionalWpProps } from './ISkillsFunctionalWpProps';
-import { escape } from '@microsoft/sp-lodash-subset';
+import { TextField, PrimaryButton } from 'office-ui-fabric-react';
+import { sp } from "@pnp/sp";
+import "@pnp/sp/webs";
+import "@pnp/sp/lists";
+import "@pnp/sp/items";
+import { Skill } from './skill';
+import { SkillItem } from './skill-item/skill-item';
 
-export default class SkillsFunctionalWp extends React.Component<ISkillsFunctionalWpProps, {}> {
-  public render(): React.ReactElement<ISkillsFunctionalWpProps> {
-    return (
-      <div className={ styles.skillsFunctionalWp }>
-        <div className={ styles.container }>
-          <div className={ styles.row }>
-            <div className={ styles.column }>
-              <span className={ styles.title }>Welcome to SharePoint!</span>
-              <p className={ styles.subTitle }>Customize SharePoint experiences using Web Parts.</p>
-              <p className={ styles.description }>{escape(this.props.description)}</p>
-              <a href="https://aka.ms/spfx" className={ styles.button }>
-                <span className={ styles.label }>Learn more</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
+export const SkillsFunctionalWp : FC<ISkillsFunctionalWpProps> = (props: ISkillsFunctionalWpProps)=>{
+  
+  const [skills, setSkills] = useState([]);
+
+  useEffect(() => {
+    sp.setup({
+      spfxContext: props.context
+    });
+    getSkillsFromSP()
+  }, []);
+
+  const getSkillsFromSP = async () => {
+    const items: any[] = await sp.web.lists.getByTitle("Skills").items.getAll();  
+    setSkills(items);
   }
+  
+  return (
+    <div className="container">
+      {
+        skills.map((sk: Skill)=>{
+            return (<SkillItem item={sk} key={sk.ID} ></SkillItem>)
+        })
+      }
+      <div>Click to delete</div>
+    </div>
+  )
 }
