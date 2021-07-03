@@ -13,7 +13,7 @@ export const Greeter: FC<IGreeterProps> = (props: IGreeterProps) => {
 
     return (    
         <div>
-            <h2>Hello, {formatName(props.user)}</h2>            
+            <h2>Hello, functional {formatName(props.user)}</h2>            
         </div>
     );
  };    

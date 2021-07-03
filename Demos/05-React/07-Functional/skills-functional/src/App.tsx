@@ -1,16 +1,24 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { Greeter } from './components/greeter/greeter';
 import { SkillList } from './components/skill-list/skill-list';
-
-const skillData = require('./skills.json');
+import axios from 'axios';
 
 function App() {
 
-  const [skills, setSkills] = useState(skillData)
+  const [skills, setSkills] = useState([])
 
   const user = { firstName: "SPFx", lastName: "Developer" };
+
+  useEffect(() => {
+    axios
+    .get('http://localhost:3001/skills.json')
+    .then((res) => {
+      setSkills(res.data)
+    })
+    .catch((err) => console.log('err fetching data: ', err));
+}, []);
 
   return (
     <div className="App">

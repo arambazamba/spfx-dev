@@ -1,5 +1,7 @@
 import { FC } from 'react';
 import { Skill } from '../../skill';
+import './skill-list.css';
+import { SkillItem } from '../skill-item/skill-item';
 
 export interface ISkillListProps {
 	skills: Skill[];
@@ -11,9 +13,10 @@ export const SkillList : FC<ISkillListProps> = (props: ISkillListProps) =>{
         <div className="container">
             {
                 props.skills.map((sk: Skill)=>{
-                    return (<div>{sk.name}</div>)
+                    return (<SkillItem item={sk} key={sk.id} ></SkillItem>)
                 })
             }
+            <div>Click to delete</div>
         </div>
     )
 }
