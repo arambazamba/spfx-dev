@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect, FC } from 'react';
 import { ISkillsFunctionalWpProps } from './ISkillsFunctionalWpProps';
+import styles from './SkillsFunctionalWp.module.scss';
 import { TextField, PrimaryButton } from 'office-ui-fabric-react';
 import { sp } from "@pnp/sp";
 import "@pnp/sp/webs";
@@ -26,7 +27,7 @@ export const SkillsFunctionalWp : FC<ISkillsFunctionalWpProps> = (props: ISkills
   }
   
   return (
-    <div className="container">
+    <div className={styles.container}>
       {
         skills.map((sk: Skill)=>{
             return (<SkillItem item={sk} key={sk.ID} ></SkillItem>)
