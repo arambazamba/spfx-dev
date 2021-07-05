@@ -19,7 +19,9 @@
       "./node_modules/@microsoft"
     ],
     "types": [
-      "webpack-env"
+      "webpack-env",
+      "mocha",
+      "chai"
     ],
     "lib": [
       "es5",
