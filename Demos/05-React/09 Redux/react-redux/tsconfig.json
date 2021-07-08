@@ -19,6 +19,7 @@
       "./node_modules/@microsoft"
     ],
     "types": [
+      "es6-promise",
       "webpack-env"
     ],
     "lib": [
