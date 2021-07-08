@@ -1,8 +1,7 @@
-import * as React from "react";
-import styles from "./GraphPersons.module.scss";
-import { IGraphPersonsProps } from "./IGraphPersonsProps";
-import { escape } from "@microsoft/sp-lodash-subset";
-import { MSGraphClient } from "@microsoft/sp-http";
+import * as React from 'react';
+import styles from './GraphPersons.module.scss';
+import { IGraphPersonsProps } from './IGraphPersonsProps';
+import { escape } from '@microsoft/sp-lodash-subset';
 import * as MicrosoftGraph from "@microsoft/microsoft-graph-types";
 
 import {
@@ -19,10 +18,7 @@ export interface IGraphPersonsState {
   image: string;
 }
 
-export default class GraphPersons extends React.Component<
-  IGraphPersonsProps,
-  IGraphPersonsState
-> {
+export default class GraphPersons extends React.Component<IGraphPersonsProps, IGraphPersonsState> {
   constructor(props: IGraphPersonsProps) {
     super(props);
 

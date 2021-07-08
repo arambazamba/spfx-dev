@@ -2,7 +2,7 @@
   "@microsoft/generator-sharepoint": {
     "version": "1.12.1",
     "libraryName": "graph-client",
-    "libraryId": "43d2cc1b-abd0-4ee4-92c9-34029d31e2fd",
+    "libraryId": "03080590-7569-42fc-b039-9c26ccc531a3",
     "environment": "spo",
     "packageManager": "npm",
     "isCreatingSolution": true,

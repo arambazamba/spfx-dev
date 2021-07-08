@@ -2,17 +2,17 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "graph-client-wp-web-part": {
+    "graph-persons-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/graphClientWp/GraphClientWpWebPart.js",
-          "manifest": "./src/webparts/graphClientWp/GraphClientWpWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/graphPersons/GraphPersonsWebPart.js",
+          "manifest": "./src/webparts/graphPersons/GraphPersonsWebPart.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "GraphClientWpWebPartStrings": "lib/webparts/graphClientWp/loc/{locale}.js"
+    "GraphPersonsWebPartStrings": "lib/webparts/graphPersons/loc/{locale}.js"
   }
 }

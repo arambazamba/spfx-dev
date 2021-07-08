@@ -2,7 +2,7 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "graph-client-client-side-solution",
-    "id": "43d2cc1b-abd0-4ee4-92c9-34029d31e2fd",
+    "id": "03080590-7569-42fc-b039-9c26ccc531a3",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,

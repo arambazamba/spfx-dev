@@ -1,7 +1,7 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
-  "id": "fd3557f7-6811-45ed-baa2-9be2b0db4ccb",
-  "alias": "GraphClientWpWebPart",
+  "id": "c8ad0143-0b51-4d5b-a05d-b422c7d44cb1",
+  "alias": "GraphPersonsWebPart",
   "componentType": "WebPart",
 
   // The "*" signifies that the version should be taken from the package.json
@@ -17,11 +17,11 @@
   "preconfiguredEntries": [{
     "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Other
     "group": { "default": "Other" },
-    "title": { "default": "GraphClientWP" },
-    "description": { "default": "GraphClientWP description" },
+    "title": { "default": "GraphPersons" },
+    "description": { "default": "GraphPersons description" },
     "officeFabricIconFontName": "Page",
     "properties": {
-      "description": "GraphClientWP"
+      "description": "GraphPersons"
     }
   }]
 }
