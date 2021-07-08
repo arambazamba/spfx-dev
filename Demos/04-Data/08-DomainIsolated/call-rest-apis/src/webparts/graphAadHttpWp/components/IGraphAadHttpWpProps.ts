@@ -1,3 +1,5 @@
+import { IUserItem } from '../IUserItem';
+
 export interface IGraphAadHttpWpProps {
-  description: string;
+    userItems: IUserItem[];
 }

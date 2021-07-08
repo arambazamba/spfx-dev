@@ -1,10 +1,12 @@
-# Domain Isolated WebParts
+# Calling REST Apis
 
-2 Webparts included:
+- Call Third Party Api
+- Call Graph using AadHttpClient
+- Domain Isolated WP
 
--   Call Third Party Api
--   Domain Isolated WP
--   Edit `package-solution.json`
+## Graph using AadHttpClient
+
+- Edit `package-solution.json`
 
     ```
     "isDomainIsolated": true,
@@ -28,3 +30,6 @@ In the navigation of SharePoint Admin, select Advanced > API access:
 Select the Pending approval for the Microsoft Graph permission User.ReadBasic.All
 
 ![sharepoint-admin-portal-02](_images/sharepoint-admin-portal-02.png)
+
+## Secured Enterprise Api
+
