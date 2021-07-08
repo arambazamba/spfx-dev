@@ -51,7 +51,8 @@ npm i -g webpack webpack-cli
 npm i -g gulp yo @microsoft/generator-sharepoint
 npm i -g @pnp/cli-microsoft365
 npm i -g generator-teams
-npm i -g -g yo generator-office
+npm i -g yo generator-office
+npm i -g spfx-fast-serve
 
 # SPA Frameworks
 npm i -g create-react-app

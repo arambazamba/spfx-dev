@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "redux-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/reduxWp/ReduxWpWebPart.js",
+          "manifest": "./src/webparts/reduxWp/ReduxWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ReduxWpWebPartStrings": "lib/webparts/reduxWp/loc/{locale}.js"
+  }
+}
