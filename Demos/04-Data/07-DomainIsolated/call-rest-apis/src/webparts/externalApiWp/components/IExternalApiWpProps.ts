@@ -1,3 +1,3 @@
 export interface IExternalApiWpProps {
-  description: string;
+    apolloMissionImage: any;
 }

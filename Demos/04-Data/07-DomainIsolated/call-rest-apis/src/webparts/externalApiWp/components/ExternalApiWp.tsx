@@ -6,17 +6,33 @@ import { escape } from '@microsoft/sp-lodash-subset';
 export default class ExternalApiWp extends React.Component<IExternalApiWpProps, {}> {
   public render(): React.ReactElement<IExternalApiWpProps> {
     return (
-      <div className={ styles.externalApiWp }>
-        <div className={ styles.container }>
-          <div className={ styles.row }>
-            <div className={ styles.column }>
-              <span className={ styles.title }>Welcome to SharePoint!</span>
-              <p className={ styles.subTitle }>Customize SharePoint experiences using Web Parts.</p>
-              <p className={ styles.description }>{escape(this.props.description)}</p>
-              <a href="https://aka.ms/spfx" className={ styles.button }>
-                <span className={ styles.label }>Learn more</span>
-              </a>
+      <div className={styles.externalApiWp}>
+        <div className={styles.container}>
+          <div className={styles.row}>
+            <div className={styles.column}>
+              <span className={styles.title}>HttpClient Demo</span>
             </div>
+          </div>
+
+          <div className={styles.row}>
+            <img src={this.props.apolloMissionImage.links[0].href} />
+            <div>
+              <strong>Title:</strong>{" "}
+              {this.props.apolloMissionImage.data[0].title}
+            </div>
+            <div>
+              <strong>Keywords:</strong>
+            </div>
+            <ul className={styles.list}>
+              {this.props.apolloMissionImage &&
+                this.props.apolloMissionImage.data[0].keywords.map(
+                  (keyword) => (
+                    <li key={keyword} className={styles.item}>
+                      {keyword}
+                    </li>
+                  )
+                )}
+            </ul>
           </div>
         </div>
       </div>
