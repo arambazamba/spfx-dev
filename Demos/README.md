@@ -106,7 +106,7 @@ SPFx Basics
 
 - Add multiple items to a SPFx Solution
 
-- Working with Lookups & Taxonomy
+- Implementin full size App Parts as Application Page replacement
 
 React Basics
 
