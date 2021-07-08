@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "external-api-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/externalApiWp/ExternalApiWpWebPart.js",
+          "manifest": "./src/webparts/externalApiWp/ExternalApiWpWebPart.manifest.json"
+        }
+      ]
+    },
+    "graph-aad-http-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/graphAadHttpWp/GraphAadHttpWpWebPart.js",
+          "manifest": "./src/webparts/graphAadHttpWp/GraphAadHttpWpWebPart.manifest.json"
+        }
+      ]
+    },
+    "secured-enterprise-api-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/securedEnterpriseApiWp/SecuredEnterpriseApiWpWebPart.js",
+          "manifest": "./src/webparts/securedEnterpriseApiWp/SecuredEnterpriseApiWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ExternalApiWpWebPartStrings": "lib/webparts/externalApiWp/loc/{locale}.js",
+    "GraphAadHttpWpWebPartStrings": "lib/webparts/graphAadHttpWp/loc/{locale}.js",
+    "SecuredEnterpriseApiWpWebPartStrings": "lib/webparts/securedEnterpriseApiWp/loc/{locale}.js"
+  }
+}
