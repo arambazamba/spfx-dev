@@ -8,6 +8,8 @@
 
 [Using CSOM for .NET Standard instead of CSOM for .NET Framework](https://docs.microsoft.com/en-us/sharepoint/dev/sp-add-ins/using-csom-for-dotnet-standard)
 
+[Connect to SharePoint using the JavaScript Object Model](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/guidance/connect-to-sharepoint-using-jsom)
+
 ## Demo
 
 - Register CSOM in `config.json`
