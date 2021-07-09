@@ -1,11 +1,3 @@
----
-title: Consume the Microsoft Graph in the SharePoint Framework
-description: Tutorial on using the AadHttpClient or MSGraphClient class to connect to the Microsoft Graph in SharePoint Framework solutions.
-ms.date: 12/04/2020
-ms.prod: sharepoint
-localization_priority: Priority
----
-
 # Consume the Microsoft Graph in the SharePoint Framework
 
 Consuming REST APIs secured with Azure Active Directory (Azure AD) and Open Authorization (OAuth 2.0) from within a SharePoint Framework client-side web part or extension is a common enterprise-level business scenario.
