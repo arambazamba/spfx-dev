@@ -1,11 +1,3 @@
----
-title: Connect to SharePoint using the JavaScript Object Model (JSOM)
-description: How to use SharePoint JSOM when building solutions on the SharePoint Framework.
-ms.date: 06/29/2020
-ms.prod: sharepoint
-localization_priority: Priority
----
-
 # Connect to SharePoint using the JavaScript Object Model (JSOM)
 
 When building SharePoint customizations, you might have used the SharePoint [JavaScript Object Model (JSOM)](../../../sp-add-ins/complete-basic-operations-using-javascript-library-code-in-sharepoint.md) to communicate with SharePoint. This is no longer the recommended path (see [Considerations](#considerations) later in this article). However, there are still valid use cases for using the JSOM API such as code migration.
