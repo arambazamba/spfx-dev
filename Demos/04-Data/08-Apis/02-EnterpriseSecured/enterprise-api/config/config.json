@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "enterprise-skills-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/enterpriseSkillsWp/EnterpriseSkillsWpWebPart.js",
+          "manifest": "./src/webparts/enterpriseSkillsWp/EnterpriseSkillsWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "EnterpriseSkillsWpWebPartStrings": "lib/webparts/enterpriseSkillsWp/loc/{locale}.js"
+  }
+}
