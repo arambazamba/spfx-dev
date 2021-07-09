@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "sp-fx-weather-web-part": {
+    "j-query-weather-wp-web-part": {
       "components": [
         {
-          "entrypoint": "./lib/webparts/spFxWeather/SpFxWeatherWebPart.js",
-          "manifest": "./src/webparts/spFxWeather/SpFxWeatherWebPart.manifest.json"
+          "entrypoint": "./lib/webparts/jQueryWeatherWp/JQueryWeatherWpWebPart.js",
+          "manifest": "./src/webparts/jQueryWeatherWp/JQueryWeatherWpWebPart.manifest.json"
         }
       ]
     }
@@ -17,12 +17,12 @@
       "globalName": "jquery"
     },
     "simpleWeather": {
-      "path": "https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js",
+      "path": "node_modules/simpleweather/jquery.simpleWeather.min.js",
       "globalName": "simpleWeather",
       "globalDependencies": ["jquery"]
     }
   },
   "localizedResources": {
-    "SpFxWeatherWebPartStrings": "lib/webparts/spFxWeather/loc/{locale}.js"
+    "JQueryWeatherWpWebPartStrings": "lib/webparts/jQueryWeatherWp/loc/{locale}.js"
   }
 }
