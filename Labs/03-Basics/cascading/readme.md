@@ -4,11 +4,6 @@ When designing the property pane for your SharePoint client-side web parts, you 
 
 ![Item dropdown disabled and web part placeholder communicating loading updated list of item options](../../images/react-cascading-dropdowns-loading-indicator-when-loading-items.png)
 
-The source of the working web part is available on GitHub at [sp-dev-fx-webparts/samples/react-custompropertypanecontrols/](https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-custompropertypanecontrols).
-
-> [!NOTE]
-> Before following the steps in this article, be sure to [set up your SharePoint client-side web part development environment](../../set-up-your-development-environment.md).
-
 ## Create new project
 
 1. Start by creating a new folder for your project:
