@@ -12,10 +12,6 @@
     }
   },
   "externals": {
-    "jquery": {
-      "path": "node_modules/jquery/dist/jquery.min.js",
-      "globalName": "jquery"
-    },
     "bootstrap": {
       "path": "node_modules/bootstrap/dist/js/bootstrap.min.js",
       "globalName": "bootstrap"
