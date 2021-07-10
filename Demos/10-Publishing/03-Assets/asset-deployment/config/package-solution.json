@@ -3,9 +3,22 @@
   "solution": {
     "name": "asset-deployment-client-side-solution",
     "id": "3146ab7f-c50d-4752-a1a0-5d8deadc5c07",
-    "version": "1.0.0.0",
+    "version": "1.0.0.1",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
+    "skipFeatureDeployment": false,
+    "features": [
+      {
+        "title": "Asset Deployment Demo",
+        "description": "Asset Deployment Demo",
+        "id": "d46cd9d6-87fc-473b-a4c0-db9ad9162b64",
+        "version": "1.1.0.0",
+        "assets": {
+          "elementManifests": ["elements.xml"],
+          "elementFiles": ["schema.xml"]
+        }
+      }
+    ],
     "developer": {
       "name": "",
       "websiteUrl": "",
