@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "tenant-deploy-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/tenantDeployWp/TenantDeployWpWebPart.js",
+          "manifest": "./src/webparts/tenantDeployWp/TenantDeployWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "TenantDeployWpWebPartStrings": "lib/webparts/tenantDeployWp/loc/{locale}.js"
+  }
+}
