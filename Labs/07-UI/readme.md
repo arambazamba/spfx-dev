@@ -1,12 +1,3 @@
----
-title: Use Office UI Fabric React components in your SharePoint client-side web part
-description: Build a web part that uses the DocumentCard component of Office UI Fabric React.
-ms.date: 06/22/2020
-ms.prod: sharepoint
-localization_priority: Priority
-ms.custom: scenarios:getting-started
----
-
 # Use Office UI Fabric React components in your SharePoint client-side web part
 
 Office UI Fabric React is the front-end framework for building experiences for Office and Office 365. It includes a robust collection of responsive, mobile-first components that make it easy for you to create web experiences by using the Office Design Language.

@@ -1,20 +1,6 @@
----
-title: Use cascading dropdowns in web part properties
-description: Create cascading dropdown controls in the SharePoint client-side web part property pane without developing a custom property pane control.
-ms.date: 06/16/2020
-ms.prod: sharepoint
-localization_priority: Priority
----
 # Use cascading dropdowns in web part properties
 
 When designing the property pane for your SharePoint client-side web parts, you may have one web part property that displays its options based on the  value selected in another property. This scenario typically occurs when implementing cascading dropdown controls. In this article, you learn how to create cascading dropdown controls in the web part property pane without developing a custom property pane control.
-
-![Item dropdown disabled and web part placeholder communicating loading updated list of item options](../../images/react-cascading-dropdowns-loading-indicator-when-loading-items.png)
-
-The source of the working web part is available on GitHub at [sp-dev-fx-webparts/samples/react-custompropertypanecontrols/](https://github.com/SharePoint/sp-dev-fx-webparts/tree/master/samples/react-custompropertypanecontrols).
-
-> [!NOTE]
-> Before following the steps in this article, be sure to [set up your SharePoint client-side web part development environment](../../set-up-your-development-environment.md).
 
 ## Create new project
 
