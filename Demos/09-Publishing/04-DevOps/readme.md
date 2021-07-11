@@ -1,1 +1,1 @@
-Use code from another Repo located at [https://github.com/ARambazamba/SPFxPipeline](https://github.com/ARambazamba/SPFxPipeline)
+Use code from another Repo located at [https://github.com/arambazamba/spfx-devops](https://github.com/arambazamba/spfx-devops)
