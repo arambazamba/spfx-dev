@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MSAL REST Node</title>
+    <script type="text/javascript" src="/node_modules/msal/dist/msal.min.js"></script>
+    <script type="text/javascript" src="/node_modules/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/dist/bundle.js"></script>
+    <link rel="stylesheet" href="/node_modules//bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">MSAL Token Flow</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="commands">
+      <a onclick="runSampleQueries()" class="btn btn-primary">Run Sample Queries with auth</a>
+      <a onclick="initClient()" class="btn btn-primary">Authenticate</a>
+      <a onclick="sprest.logInfo()" class="btn btn-primary">Log Info</a>
+      <a onclick="sprest.query(`lists/getByTitle('SPRestList')/Items`, true)" class="btn btn-primary">Get List</a>
+      <a onclick="sprest.createItem('SPRestList')" class="btn btn-primary">Create Item</a>
+      <a onclick="sprest.createFolder('SPRestList')" class="btn btn-primary">Create Folder</a>
+      <a onclick="sprest.updateItem('SPRestList', 2, 'Updating is great')" class="btn btn-primary">Update Item</a>
+      <a onclick="sprest.deleteItem('SPRestList', 2)" class="btn btn-primary">Delete Item</a>
+    </div>
+
+    <div class="main">
+      <div class="card" style="width: 90vw">
+        <div class="card-body">
+          <pre id="result"></pre>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "tenantId": "d92b247e-90e0-4469-a129-6a32866c0d0a",
+    "clientId": "9bf146b2-9eac-4794-a7f4-02778529a979",
+    "authority": "https://login.microsoftonline.com/d92b247e-90e0-4469-a129-6a32866c0d0a/",
+    "redirectUri": "http://localhost:8080"
+  },
+  "spTenant": "integrationsonline",
+  "site": "M365Dev"
+}
