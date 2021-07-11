@@ -8,12 +8,14 @@
 
 Requirements:
 
-Demos require `Node 10.x, Webpack, Gulp`
+Demos require `Node 10.x, Webpack`
 
 ```
 nvm install 10.22.0
-npm i -g webpack gulp
+npm i -g webpack@4.44.1
 ```
+
+> Note: to check your installed webpack version use `npm list -g --depth 0`
 
 
 ## Readings
