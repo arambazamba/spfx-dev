@@ -4,18 +4,16 @@ Set-ExecutionPolicy Bypass -Scope Process -Force;
 Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Install Software
-choco install microsoft-edge -y
 choco install googlechrome -y
 choco install vscode -y
-choco install dotnetcore-sdk -y
 choco install dotnet-5.0-sdk -y
 choco install git -y
 choco install gitextensions -y
-choco install nodejs-lts --version=12.18.4 -y
 choco install azure-cli -y
 choco install azure-functions-core-tools-3 --params="'/x64:true'" -y
 choco install azurepowershell -y
 choco install postman -y
+choco install nvm
 choco install ngrok -y
 
 # Refresh Path Env for npm 
@@ -43,8 +41,13 @@ code --install-extension ms-azure-devops.azure-pipelines
 code --install-extension xabikos.JavaScriptSnippets			
 code --install-extension eliostruyf.spfx-snippets
 code --install-extension TeamsDevApp.ms-teams-vscode-extension
-code --install-extension madewithcardsio.adaptivecardsstudiobeta
 code --install-extension eliostruyf.vscode-msgraph-autocomplete
+
+# Install Node
+
+nvm install 12.20.0
+nvm install 10.22.0
+nvm use 12.20.0
 
 # Base Toolset M365 Related
 npm i -g webpack webpack-cli

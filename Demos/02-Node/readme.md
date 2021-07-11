@@ -1,36 +1,26 @@
-# Using Node as a Dev Tool
+# Using Node in SharePoint Development
 
-Installation
+## Demos
 
-```
-npm i -g webpack webpack-cli gulp gulp-cli
-```
+- Typescript Basics
+- SharePoint REST
+- PnP JS Node Standalone
 
-[npm CLI Documentation](https://docs.npmjs.com/cli-documentation/)
+Requirements:
 
-[npm audit](https://docs.npmjs.com/cli/audit.html) evaluates possible `security problems`
-
-![audit](_images/npm-audit.png)
-
-## Execute Sample Tasks
-
-Run a gulp task: 
+Demos require `Node 10.x, Webpack, Gulp`
 
 ```
-gulp babel
-gulp compile-sass
+nvm install 10.22.0
+npm i -g webpack gulp
 ```
-Run webpack: 
-
-```
-webpack
-```
-> Note: Uses `webpack.config.js` by default
 
 
-# Links & Ressources
+## Readings
 
 [Node.js](https://nodejs.org)
+
+[NPM Cli Documentation](https://docs.npmjs.com/cli-documentation/)
 
 [NVM for Windows](https://github.com/coreybutler/nvm-windows)
 
@@ -43,3 +33,4 @@ webpack
 [Yeoman](https://yeoman.io/)
 
 [Babel](https://babeljs.io/)
+
