@@ -1,58 +1,4 @@
-# Developing SharePoint Framework Solutions (SPFx)
-
-## Kursbeschreibung
-
-Mit SharePoint Framework hat Microsoft sein User Interface überarbeitet und fit für die Darstellung auf unterschiedlichen Geräten gemacht Auch das klassische Toolset wie .NET, C# aber auch Visual Studio Prof / Enterprise über Bord geworfen.
-
-SharePoint Framework Lösungen werden typischer Weise mit Node.js, Visual Studio Code, TypeScript und JavaScript Frameworks wie React, Angular oder Vue.js entwickelt. Mit Erscheinen des SharePoint 2016 Feature Pack 2 ist dessen Einsatz auch teilweise On Premises möglich. Im Sharepoint 2019 sind Modern Team Sites und Modern UI gemeinsam mit SPFx von Anfang an dabei.
-
-Nach Abschluss dieses Seminars haben die Teilnehmer Wissen zu folgenden Themen:
-
-- Wissen was SPFx ist und wie man es einsetzt
-
-- Verstehen & Verwenden von Node.js & Tooling
-
-- Kennen der Grundlagen von SharePoint Framework
-
-- Verteilen von SPFx Lösungen using Office CLI & DevOps Pipelines
-
-- Zugreifen auf SharePoint Daten und API
-
-- Erstellen von SPFx Webparts mit React
-
-- Verwenden von Java Script Frameworks mit SPFx
-
-- Customizing the User Interface using Bootstrap & Office UI Fabric
-
-- SharePoint Framework Extensions (Command Sets, Script Injection, FieldCustomizer)
-
-- Extending Microsoft Teams
-
-## Zielgruppe
-
-Dieses Seminar richtet sich an SharePoint Entwickler welche detaillierte Kenntnisse über SharePoint Framework und dessen Einsatz als Werkzeug für moderne SharePoint / Office 365 Lösungen erlernen möchten.
-
-Dieses Seminar ist NICHT für Einsteiger in die SharePoint oder Office 365 Programmierung geeignet – Level 300+
-
-## Vortragsart
-
-Neue Themengebiete werden anhand von Folien und Demos erarbeitet – am Ende der Module werden Hands-On-Labs ausgeteilt.
-
-## Voraussetzungen
-
-Erfahrung mit Web- & SharePoint Entwicklung
-
-Grundlegende JavaScript (ES 6, Objektorientierung) & TypeScript Kenntniss
-
-SharePoint und Office 365 Client Side Development Kenntnisse: REST API, PnP JS Core, CSOM
-
-Grundlegendes Kennen von Office 365, Azure AD, Graph
-
-Die Voraussetzungen werden im Seminar „SharePoint 2019 & Office 365 - Client Side Development Fundamentals ” vermittelt
-
-## Dauer: 4 Tage
-
-# Inhalte
+# Contents
 
 SPFx Overview
 
@@ -190,9 +136,7 @@ Using JavaScript Frameworks & Plugins with SPFx
 
 - Using Angular JS in SPFx
 
-- Using Angular Elements in SPFx
-
-- Scaffolding Projects that use Vue.js & Handlebars.js
+- Scaffolding Projects that use Vue.js
 
 SharePoint Framework Extensions
 
@@ -231,6 +175,8 @@ Extending Micrsoft Teams
 - Overview Tabs, Bots, Connectors, Cards
 
 - Implementing Tabs using SharePoint Framework
+
+## Additional Material
 
 [SharePoint Framework Client-Side Web Part Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-webparts)
 
