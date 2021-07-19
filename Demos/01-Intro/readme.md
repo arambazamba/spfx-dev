@@ -6,8 +6,17 @@
 
     ```
     nvm install 12.20.0
+    nvm use 12.20.0
     ```
 # Machine Setup for SPFx Dev
+
+List global installations:
+
+```
+npm list -g --depth 0
+```
+
+Install SPFx requirements:
 
 ```
 npm install -g yo gulp
