@@ -1,5 +1,5 @@
 import * as Msal from "msal";
-import { MSALConfig } from "../config-model";
+import { MSALConfig } from "./config-model";
 
 export class SPRestClient {
   private msalApp: Msal.UserAgentApplication = null;
