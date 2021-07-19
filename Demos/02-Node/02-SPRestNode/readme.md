@@ -8,7 +8,8 @@
 
 ## Demo
 
-- Use Node 12.x
+- Use Node 12.x 
+- Install webpack@4.44.1
 - Go to `https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/RegisteredApps`
 - Create an App Registration and update `msal-config.json`
 
