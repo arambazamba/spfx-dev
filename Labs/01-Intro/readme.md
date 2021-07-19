@@ -1,11 +1,3 @@
-* ---
-title: Connect your client-side web part to SharePoint (Hello World part 2)
-description: Access functionality and data in SharePoint and provide a more integrated experience for end users.
-ms.date: 06/22/2021
-ms.prod: sharepoint
-localization_priority: Priority
-ms.custom: scenarios:getting-started
----
 # Connect your client-side web part to SharePoint (Hello World part 2)
 
 Connect your web part to SharePoint to access functionality and data in SharePoint and provide a more integrated experience for end users. This article continues building the Hello World web part built in the previous article [Build your first web part](./build-a-hello-world-web-part.md).
