@@ -24,11 +24,36 @@ npm install -g @microsoft/generator-sharepoint
 npm install -g @pnp/generator-spfx
 ```
 
+Start Project:
+
+```
+gulp serve
+```
+
 To trust the dev certificate run from within your first project:
 
 ```
 gulp trust-dev-cert
 ```
+
+Go to Online Workbench:
+
+- Add `_layouts/workbench.aspx` to site url
+- Add the WebPart
+
+Create bundle:
+
+```
+gulp bundle [--ship]
+```
+
+Create *.sppkg:
+
+```
+gulp package-solution [--ship]
+```
+
+Deploy *.sppkg to app catalog
 
 ## REST Client
 
