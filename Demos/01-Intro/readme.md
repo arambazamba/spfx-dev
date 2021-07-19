@@ -21,7 +21,12 @@ Install SPFx requirements:
 ```
 npm install -g yo gulp
 npm install -g @microsoft/generator-sharepoint
-npm install -g @pnp/generator-spfx
+```
+
+Create Projcet:
+
+```
+yo @microsoft/generator-sharepoint
 ```
 
 Start Project:
