@@ -1,7 +1,7 @@
 # Requirements
 
 - Install [VS Code](https://code.visualstudio.com/download)
-- Install [NVM Windows](https://github.com/coreybutler/nvm-windows)
+- Install [NVM Windows](https://github.com/coreybutler/nvm-windows). Remove existing Node installations in advance.
 - Install [Node Version 12.x](https://nodejs.org/en/download/releases/) using nvm:
 
     ```
