@@ -4,7 +4,7 @@ Companion Material for Class Delivery by [Alexander Pajer](https://www.integrati
 
 - [Requirements / Tooling](./Tooling)
   - [Register Azure Pass](./Tooling/05-AzurePass)
-  - [Microsoft 365 Tenant](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-developer-tenant)
+  - [Microsoft 365 Tenant](./Tooling/07-M365Tenant)
   - [Git & GitHub Basics](./Tooling/01-Github)
   - [Visual Studio Code Intro](./Tooling/02-VSCode)
   - [Document Repos using Markdown](./Tooling/03-Markdown)
