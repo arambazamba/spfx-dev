@@ -9,6 +9,8 @@
     nvm install 12.20.0
     nvm use 12.20.0
     ```
+> Note: Find Node versions [here](https://nodejs.org/en/download/releases/)
+
 # Machine Setup for SPFx Dev
 
 List global installations:
