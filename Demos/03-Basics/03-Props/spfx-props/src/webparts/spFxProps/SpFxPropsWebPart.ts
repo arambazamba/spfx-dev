@@ -47,6 +47,7 @@ export default class SpFxPropsWebPart extends BaseClientSideWebPart<ISpFxPropsWe
         });
     }
 
+    //Creates Apply Button in Prop Pane
     protected get disableReactivePropertyChanges(): boolean {
         return true;
     }
