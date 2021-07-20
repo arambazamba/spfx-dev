@@ -171,7 +171,7 @@ You'll build a web part that displays list items from a selected SharePoint list
 
 1. In the web browser, add the **List items** web part to the canvas and open its properties. Verify that the value set for the **List** property is displayed in the web part body.
 
-    ![Web part showing the value of the listName property](../../images/react-cascading-dropdowns-web-part-first-run.png)
+    ![Web part showing the value of the listName property](../../../images/react-cascading-dropdowns-web-part-first-run.png)
 
 ## Populate the dropdown with SharePoint lists to choose from
 
@@ -311,7 +311,7 @@ Previously, you associated the dropdown control of the `listName` property with 
     - If the list information is loaded, the list dropdown is enabled.
     - If the list information about lists hasn't been loaded yet, the loading indicator is displayed, which informs the user that the web part is loading information about lists.
 
-    ![Loading indicator displayed in web part while loading information about available lists](../../images/react-cascading-dropdowns-loading-indicator-when-loading-list-info.png)
+    ![Loading indicator displayed in web part while loading information about available lists](../../../images/react-cascading-dropdowns-loading-indicator-when-loading-list-info.png)
 
     After the information about available lists has been loaded, the method assigns the retrieved data to the `lists` class variable, from which it can be used by the list dropdown.
 
@@ -327,13 +327,13 @@ Previously, you associated the dropdown control of the `listName` property with 
 
     When you add a web part to the canvas and open its property pane, you should see the lists dropdown filled with available lists for the user to choose from.
 
-    ![List dropdown in the web part property pane showing the available lists](../../images/react-cascading-dropdowns-list-dropdown-available-lists.png)
+    ![List dropdown in the web part property pane showing the available lists](../../../images/react-cascading-dropdowns-list-dropdown-available-lists.png)
 
 ## Allow users to select an item from the selected list
 
 When building web parts, you often need to allow users to choose an option from a set of values determined by a previously selected value, such as choosing a country/region based on the selected continent, or choosing a list item from a selected list. This user experience is often referred to as cascading dropdowns. Using the standard SharePoint Framework client-side web parts capabilities, you can build cascading dropdowns in the web part property pane. To do this, you extend the previously built web part with the ability to choose a list item based on the previously selected list.
 
-![List item dropdown open in the web part property pane](../../images/react-cascading-dropdowns-item-dropdown-list-items.png)
+![List item dropdown open in the web part property pane](../../../images/react-cascading-dropdowns-item-dropdown-list-items.png)
 
 ### Add item web part property
 
@@ -517,7 +517,7 @@ Previously, you defined a dropdown control to render the `itemName` property in 
       private loadItems(): Promise<IPropertyPaneDropdownOption[]> {
         if (!this.properties.listName) {
           // resolve to empty options since no list has been selected
-          return Promise.resolve();
+          return Promise.resolve([]);
         }
 
         const wp: ListItemsWebPart = this;
@@ -601,7 +601,7 @@ Previously, you defined a dropdown control to render the `itemName` property in 
 
     As required, initially the item dropdown is disabled, requiring users to select a list first. But at this point, even after a list has been selected, the item dropdown remains disabled.
 
-    ![Item dropdown disabled even after a list has been selected](../../images/react-cascading-dropdowns-list-selected-item-disabled.png)
+    ![Item dropdown disabled even after a list has been selected](../../../images/react-cascading-dropdowns-list-selected-item-disabled.png)
 
 1. Update web part property pane after selecting a list. When a user selects a list in the property pane, the web part should update, enabling the item dropdown and showing the list of items available in the selected list.
 
@@ -654,5 +654,5 @@ Previously, you defined a dropdown control to render the `itemName` property in 
 
     After the items for the selected list are loaded, they're assigned to the **items** class variable from where they can be referenced by the item dropdown. Now that the information about available list items is available, the item dropdown is enabled allowing users to choose an item. The loading indicator is removed, which clears the web part body that is why the web part should re-render. Finally, the web part property pane refreshes to reflect the latest changes.
 
-    ![Item dropdown in the web part property pane showing available list items for the selected list](../../images/react-cascading-dropdowns-item-dropdown-list-items.png)
+    ![Item dropdown in the web part property pane showing available list items for the selected list](../../../images/react-cascading-dropdowns-item-dropdown-list-items.png)
 
