@@ -14,7 +14,7 @@ export interface ISpFxUtilsWpWebPartProps {
 export default class UtilsWpWebPart extends BaseClientSideWebPart<ISpFxUtilsWpWebPartProps> {
     public render(): void {
         let ctx = this.context.pageContext;
-        console.log(ctx);
+        console.log('context:', ctx);
         Log.info('Current Site', ctx.site.absoluteUrl);
 
         const environmentType: string = EnvironmentType.Local ? 'You are in local environment' : 'You are in sharepoint environment';
