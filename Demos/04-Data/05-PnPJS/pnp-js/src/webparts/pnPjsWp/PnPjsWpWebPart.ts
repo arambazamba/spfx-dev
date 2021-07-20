@@ -23,21 +23,21 @@ export default class PnPjsWpWebPart extends BaseClientSideWebPart<IPnPjsWpWebPar
 
     public render(): void {
         this.domElement.innerHTML = `
-      <div class="${styles.pnPjsWp}">
-        <div class="${styles.container}">
-          <div class="${styles.row}">
-            <div class="${styles.column}">
-              <span class="${styles.title}">Welcome to SharePoint!</span>
-              <p class="${styles.subTitle}">Customize SharePoint experiences using Web Parts.</p>
-              <p class="${styles.description}">${escape(this.properties.description)}</p>
-              <a href="https://aka.ms/spfx" class="${styles.button}">
-                <span class="${styles.label}">Learn more</span>
-              </a>
-              <div id="response"></div>  
+        <div class="${styles.pnPjsWp}">
+            <div class="${styles.container}">
+            <div class="${styles.row}">
+                <div class="${styles.column}">
+                <span class="${styles.title}">Welcome to SharePoint!</span>
+                <p class="${styles.subTitle}">Customize SharePoint experiences using Web Parts.</p>
+                <p class="${styles.description}">${escape(this.properties.description)}</p>
+                <a href="https://aka.ms/spfx" class="${styles.button}">
+                    <span class="${styles.label}">Learn more</span>
+                </a>
+                <div id="response"></div>  
+                </div>
             </div>
-          </div>
-        </div>
-      </div>`;
+            </div>
+        </div>`;
         this.getTitle();
     }
 

@@ -30,11 +30,11 @@ In this exercise you will create a SharePoint Framework (SPFx) web part that wil
     1. Select **New > List** in the toolbar.
     1. Set the list name to **Countries** and select **Create**.
 
-        ![Screenshot showing form to create a list](../../../Images/create-countries-list01.png)
+        ![Screenshot showing form to create a list](../../../images/create-countries-list01.png)
 
     1. Add items to the list by entering the names of different countries as shown in the following image.
 
-        ![Screenshot showing sample countries in the list](../../../Images/create-countries-list02.png)
+        ![Screenshot showing sample countries in the list](../../../images/create-countries-list02.png)
 
 ### Create the web part to display data using the SharePoint REST API
 
@@ -246,23 +246,23 @@ In this exercise you will create a SharePoint Framework (SPFx) web part that wil
 
     1. Add the web part to the page: Select the **Add a new web part** control...
 
-        ![Screenshot of the SharePoint workbench](../../../Images/add-webpart-01.png)
+        ![Screenshot of the SharePoint workbench](../../../images/add-webpart-01.png)
 
         ...then select the expand toolbox icon in the top-right...
 
-        ![Screenshot of the SharePoint workbench](../../../Images/add-webpart-02.png)
+        ![Screenshot of the SharePoint workbench](../../../images/add-webpart-02.png)
 
         ...and select the **SPFxHttpClientDemo** web part to add the web part to the page:
 
-        ![Screenshot of the SharePoint workbench toolbox](../../../Images/add-webpart-03.png)
+        ![Screenshot of the SharePoint workbench toolbox](../../../images/add-webpart-03.png)
 
     1. The web part will appear on the page with a single button and no data in the list:
 
-        ![Screenshot of the web part with no data](../../../Images/add-webpart-04.png)
+        ![Screenshot of the web part with no data](../../../images/add-webpart-04.png)
 
     1. Select the **Get Countries** button and notice the list will display the data from the SharePoint REST API:
 
-        ![Screenshot of the web part with data](../../../Images/get-items-sp.png)
+        ![Screenshot of the web part with data](../../../images/get-items-sp.png)
 
 1. Stop the local web server by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in the console/terminal window.
 
@@ -520,36 +520,36 @@ In this exercise, you will extend the SPFx project from the previous exercise to
 
     1. Add the web part to the page: Select the **Add a new web part** control...
 
-        ![Screenshot of the SharePoint workbench](../../../Images/add-webpart-01.png)
+        ![Screenshot of the SharePoint workbench](../../../images/add-webpart-01.png)
 
         ...then select the expand toolbox icon in the top-right...
 
-        ![Screenshot of the SharePoint workbench](../../../Images/add-webpart-02.png)
+        ![Screenshot of the SharePoint workbench](../../../images/add-webpart-02.png)
 
         ...and select the **SPFxHttpClientContent** web part to add the web part to the page:
 
-        ![Screenshot of the SharePoint workbench toolbox](../../../Images/add-webpart-03.png)
+        ![Screenshot of the SharePoint workbench toolbox](../../../images/add-webpart-03.png)
 
     1. The web part will appear on the page with a single button and no data in the list:
 
-        ![Screenshot of the web part with all buttons](../../../Images/all-buttons.png)
+        ![Screenshot of the web part with all buttons](../../../images/all-buttons.png)
 
     1. Select the **Get Countries** button and examine the results returned... scroll to the bottom of the list and notice there is no entry with a timestamp for the **Title**.
     1. Select the **Add List item** button and scroll to the end of the results returned. Notice the new item that appears with a timestamp as the **Title**.
 
-        ![Screenshot of the web part with the new item](../../../Images/add-items-sp-01.png)
+        ![Screenshot of the web part with the new item](../../../images/add-items-sp-01.png)
 
     1. Test the update process by selecting the **Update List Item** button. Notice before selecting it the title of the **United States** item:
 
-        ![Screenshot of the web part before updating an item](../../../Images/update-items-sp-01.png)
+        ![Screenshot of the web part before updating an item](../../../images/update-items-sp-01.png)
 
         Notice after selecting the button, the title has changed:
 
-        ![Screenshot of the web part after updating an item](../../../Images/update-items-sp-02.png)
+        ![Screenshot of the web part after updating an item](../../../images/update-items-sp-02.png)
 
     1. Test the delete process by selecting the **Delete List Item** button. Notice before selecting it the last item in the list... in this case, the item with the timestamp for the **Title**:
 
-        ![Screenshot of the web part delete button](../../../Images/delete-items-sp-01.png)
+        ![Screenshot of the web part delete button](../../../images/delete-items-sp-01.png)
 
         Notice after selecting the button, the last item in the list has been removed.
 
