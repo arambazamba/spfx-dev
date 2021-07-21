@@ -54,15 +54,15 @@ In this exercise you will create a SharePoint Framework client-side web part tha
 
 1. The SharePoint Framework's gulp **serve** task will build the project, start a local web server, and launch a browser open to the SharePoint Workbench:
 
-    ![Screenshot of the SharePoint Workbench](../../Images/ex01-testing-01.png)
+    ![Screenshot of the SharePoint Workbench](../../images/ex01-testing-01.png)
 
 1. Select the web part icon button to open the list of available web parts:
 
-    ![Screenshot of adding the React WebPart Demo web part](../../Images/ex01-testing-02.png)
+    ![Screenshot of adding the React WebPart Demo web part](../../images/ex01-testing-02.png)
 
 1. Select the **React WebPart Demo** web part:
 
-    ![Screenshot of the React WebPart Demo web part](../../Images/ex01-testing-03.png)
+    ![Screenshot of the React WebPart Demo web part](../../images/ex01-testing-03.png)
 
 1. Close the browser and stop the local web server by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in the command prompt.
 
@@ -192,7 +192,7 @@ Update the web part to show a list of colors using a child React component.
 
     1. Add the web part to the workbench. Notice our list of three colors is rendered up exactly as we would expect.
 
-        ![Screenshot of running React web part](../../Images/ex01-testing-04.png)
+        ![Screenshot of running React web part](../../images/ex01-testing-04.png)
 
     1. Close the browser and stop the local web server by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in the command prompt.
 
@@ -262,11 +262,11 @@ In this exercise, you will update the existing React-based SPFx web part to leve
 
     1. Add the web part to the workbench. Notice our list of three colors is rendered up exactly as we would expect.
 
-        ![Screenshot of running React web part](../../Images/ex02-testing-01.png)
+        ![Screenshot of running React web part](../../images/ex02-testing-01.png)
 
     1. Select the **delete** button for one of the colors & examine the browser's JavaScript console, usually located in the browser's developer tools. You should see a log message displayed each time a button is selected:
 
-        ![Screenshot of browser's JavaScript Console](../../Images/ex02-testing-02.png)
+        ![Screenshot of browser's JavaScript Console](../../images/ex02-testing-02.png)
 
     1. Close the browser and stop the local web server by pressing <kbd>CTRL</kbd>+<kbd>C</kbd> in the command prompt.
 
@@ -280,7 +280,7 @@ In this exercise, you will update the existing React-based SPFx web part to make
 
 1. Create a new SharePoint list within an existing SharePoint site collection. In this lab, it is assumed the list is named **Colors** and has a single **Title** field. Populate this list with some colors as shown in the following figure:
 
-    ![Screenshot of Colors SharePoint list](../../Images/ex03-newList.png)
+    ![Screenshot of Colors SharePoint list](../../images/ex03-newList.png)
 
 1. Update the SharePoint Framework web part to provide additional inputs to the React component:
     1. Open the **./src/webparts/reactWebPartDemo/ReactWebPartDemoWebPart.ts** file.
@@ -445,7 +445,7 @@ In this exercise, you will update the existing React-based SPFx web part to make
 
     1. Add the web part to the hosted workbench. Notice our list of three colors is rendered up exactly as we would expect.
 
-        ![Screenshot of running React web part](../../Images/ex02-testing-01.png)
+        ![Screenshot of running React web part](../../images/ex02-testing-01.png)
 
     1. Select the **delete** button for one of the colors. Notice the color is removed from the set of colors displayed in the web part.
 

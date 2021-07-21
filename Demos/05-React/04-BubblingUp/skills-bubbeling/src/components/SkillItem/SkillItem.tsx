@@ -13,12 +13,12 @@ export interface State {
 }
 
 export default class SkillItem extends React.Component<SkillItemProps, any> {
-	constructor(props: SkillItemProps) {
-		super(props);
-		// this.state = {
-		// 	item: this.props.item
-		// };
-	}
+	// constructor(props: SkillItemProps) {
+	// 	super(props);
+	// 	this.state = {
+	// 		item: this.props.item
+	// 	};
+	// }
 
 	render() {
 		// Using Destructoring
@@ -30,7 +30,7 @@ export default class SkillItem extends React.Component<SkillItemProps, any> {
 					Shorter but harder maybe to unserstand?
 					<input type="checkbox" checked={this.props.item.completed} onChange={this.props.toggleComplete.bind(this, id)} /> 
 					*/}
-					<input type="checkbox" checked={this.props.item.completed} onChange={this.toggleComplete} />
+					<input type="checkbox" checked={completed} onChange={this.toggleComplete} />
 				</div>
 				{/* 
 				Original version:
