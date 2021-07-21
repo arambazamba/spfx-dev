@@ -6,7 +6,8 @@ import { escape } from '@microsoft/sp-lodash-subset';
 import styles from './PnPjsWpWebPart.module.scss';
 import * as strings from 'PnPjsWpWebPartStrings';
 
-import { sp, Web } from '@pnp/sp/presets/all';
+import { sp } from '@pnp/sp/presets/all';
+import { Skill } from './skills.model';
 
 export interface IPnPjsWpWebPartProps {
     description: string;
@@ -18,6 +19,7 @@ export default class PnPjsWpWebPart extends BaseClientSideWebPart<IPnPjsWpWebPar
             sp.setup({
                 spfxContext: this.context,
             });
+            this.getItems();
         });
     }
 
@@ -27,27 +29,22 @@ export default class PnPjsWpWebPart extends BaseClientSideWebPart<IPnPjsWpWebPar
             <div class="${styles.container}">
             <div class="${styles.row}">
                 <div class="${styles.column}">
-                <span class="${styles.title}">Welcome to SharePoint!</span>
-                <p class="${styles.subTitle}">Customize SharePoint experiences using Web Parts.</p>
-                <p class="${styles.description}">${escape(this.properties.description)}</p>
-                <a href="https://aka.ms/spfx" class="${styles.button}">
-                    <span class="${styles.label}">Learn more</span>
-                </a>
+                <span class="${styles.title}">Skills using PnPJS</span>
                 <div id="response"></div>  
                 </div>
             </div>
             </div>
         </div>`;
-        this.getTitle();
     }
 
-    protected getTitle(): void {
-        sp.web
-            .select('Title')
-            .get<{ Title: string }>()
-            .then((w) => {
-                this.domElement.querySelector('#response').innerHTML = `Current Web Title: ${w.Title}`;
-            });
+    protected async getItems(): Promise<void> {
+        const skills: Skill[] = await sp.web.lists.getByTitle('Skills').items.getAll();
+
+        let html = '';
+        for (let sk of skills) {
+            html += `<div>${sk.Title} </div>`;
+        }
+        document.querySelector('#response').innerHTML = html;
     }
 
     protected get dataVersion(): Version {
