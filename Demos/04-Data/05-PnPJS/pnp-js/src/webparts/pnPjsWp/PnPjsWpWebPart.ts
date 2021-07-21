@@ -30,7 +30,7 @@ export default class PnPjsWpWebPart extends BaseClientSideWebPart<IPnPjsWpWebPar
             <div class="${styles.row}">
                 <div class="${styles.column}">
                 <span class="${styles.title}">Skills using PnPJS</span>
-                <div id="response"></div>  
+                <div id="skills"></div>  
                 </div>
             </div>
             </div>
@@ -39,12 +39,9 @@ export default class PnPjsWpWebPart extends BaseClientSideWebPart<IPnPjsWpWebPar
 
     protected async getItems(): Promise<void> {
         const skills: Skill[] = await sp.web.lists.getByTitle('Skills').items.getAll();
-
-        let html = '';
         for (let sk of skills) {
-            html += `<div>${sk.Title} </div>`;
+            document.querySelector('#skills').insertAdjacentHTML('beforeend', `<div>${sk.Title} </div>`);
         }
-        document.querySelector('#response').innerHTML = html;
     }
 
     protected get dataVersion(): Version {
