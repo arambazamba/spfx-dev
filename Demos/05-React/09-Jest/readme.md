@@ -1,5 +1,13 @@
 # React Jest Testing
 
+[Chai Assertion Library](https://www.chaijs.com/)
+
+[Jest Test Runner](https://jestjs.io/)
+
+[Enzyme](https://enzymejs.github.io/enzyme/)
+
+## Demo
+
 Uses [jest-preset-spfx-react16](https://www.npmjs.com/package/@voitanos/jest-preset-spfx-react16)
 
 Jest Installation:
