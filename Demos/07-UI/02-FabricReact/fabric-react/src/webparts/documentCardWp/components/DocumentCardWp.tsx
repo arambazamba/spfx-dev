@@ -30,7 +30,7 @@ export default class DocumentCardWp extends React.Component<
     return (
       <DocumentCard onClickHref="http://bing.com">
         <DocumentCardPreview {...this.previewProps} />
-        {/* <DocumentCardTitle title="Revenue stream proposal fiscal year 2016 version02.pptx" /> */}
+        <DocumentCardTitle title="Revenue stream proposal fiscal year 2016 version02.pptx" />
         <DocumentCardActivity
           activity="Created Feb 23, 2016"
           people={[
