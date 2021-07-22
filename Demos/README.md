@@ -1,3 +1,11 @@
+# Demos
+
+## Additional Material
+
+[SharePoint Framework Client-Side Web Part Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-webparts)
+
+[SharePoint Framework Extensions Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-extensions)
+
 # Contents
 
 SPFx Overview
@@ -175,9 +183,3 @@ Extending Micrsoft Teams
 - Overview Tabs, Bots, Connectors, Cards
 
 - Implementing Tabs using SharePoint Framework
-
-## Additional Material
-
-[SharePoint Framework Client-Side Web Part Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-webparts)
-
-[SharePoint Framework Extensions Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-extensions)
