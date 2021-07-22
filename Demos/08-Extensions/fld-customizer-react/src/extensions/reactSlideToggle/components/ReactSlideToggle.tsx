@@ -18,7 +18,7 @@ interface IReactSlideToggleState {
 
 const LOG_SOURCE: string = 'ReactSlideToggle';
 
-export default class ReactSlideToggle extends React.Component<IReactSlideToggleProps, {}> {
+export default class ReactSlideToggle extends React.Component<IReactSlideToggleProps, IReactSlideToggleState> {
 
   constructor(props: IReactSlideToggleProps, state: IReactSlideToggleState) {
     super(props, state);
@@ -53,5 +53,9 @@ export default class ReactSlideToggle extends React.Component<IReactSlideToggleP
         />
       </div>
     );
+  }
+
+  private onChanged(checked: boolean): void {
+    if (this.props.onChanged) this.props.onChanged(checked, this.props.id);
   }
 }

@@ -6,12 +6,12 @@ import { override } from '@microsoft/decorators';
 import { BaseFieldCustomizer, IFieldCustomizerCellEventParameters } from '@microsoft/sp-listview-extensibility';
 import { SPPermission } from '@microsoft/sp-page-context';
 import * as strings from 'ReactSlideToggleFieldCustomizerStrings';
-import ReactSlideToggle, { IReactSlideToggleProps } from './components/ReactSlideToggle';
 
 import { sp } from '@pnp/sp';
 import '@pnp/sp/webs';
 import '@pnp/sp/lists';
 import '@pnp/sp/items';
+import ReactSlideToggle from './components/ReactSlideToggle';
 
 export interface IReactSlideToggleFieldCustomizerProperties {
     // This is an example; replace with your own property

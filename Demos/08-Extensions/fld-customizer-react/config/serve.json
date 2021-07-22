@@ -4,20 +4,21 @@
   "https": true,
   "serveConfigurations": {
     "default": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Lists/FldCustomizerToggle/AllItems.aspx",
       "fieldCustomizers": {
-        "InternalFieldName": {
-          "IsActive": "b3dfd363-276c-4d8e-a3bb-dc32cac2de12",
+          "IsActive": {
+          "id": "b3dfd363-276c-4d8e-a3bb-dc32cac2de12",
           "properties": {
           }
         }
       }
     },
     "reactSlideToggle": {
-      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Lists/FldCustomizerToggle/AllItems.aspx",
       "fieldCustomizers": {
-        "InternalFieldName": {
-          "IsActive": "b3dfd363-276c-4d8e-a3bb-dc32cac2de12",
+        
+          "IsActive": {
+          "id": "b3dfd363-276c-4d8e-a3bb-dc32cac2de12",
           "properties": {
           }
         }
