@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "app-customizer-client-side-solution",
-    "id": "fc3159d4-8686-4d6d-9fad-6337214cd90a",
+    "name": "fld-customizer-react-client-side-solution",
+    "id": "08b64bdb-585d-45fa-8f27-59a3d50e1fff",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
     "isDomainIsolated": false,
@@ -17,18 +17,17 @@
       {
         "title": "Application Extension - Deployment of custom action.",
         "description": "Deploys a custom action with ClientSideComponentId association",
-        "id": "ed01ca85-d6a6-4d47-bdd2-50b680fb808b",
+        "id": "2495f169-d38e-4cfd-ad1d-9b5aedb24e7d",
         "version": "1.0.0.0",
         "assets": {
           "elementManifests": [
-            "elements.xml",
-            "ClientSideInstance.xml"
+            "elements.xml"
           ]
         }
       }
     ]
   },
   "paths": {
-    "zippedPackage": "solution/app-customizer.sppkg"
+    "zippedPackage": "solution/fld-customizer-react.sppkg"
   }
 }
