@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/m365dev/SitePages/Home.aspx",
+      "customActions": {
+        "7c23a2c8-66f6-402e-bf35-b4f2a62ca854": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page",
+            "Bottom": "Bottom area in the page"
+          }
+        }
+      }
+    },
+    "placeholderCustomizer": {
+      "pageUrl": "https://integrationsonline.sharepoint.com/sites/m365dev/SitePages/Home.aspx",
+      "customActions": {
+        "7c23a2c8-66f6-402e-bf35-b4f2a62ca854": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page",
+            "Bottom": "Bottom area in the page"
+          }
+        }
+      }
+    }
+  }
+}
