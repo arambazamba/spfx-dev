@@ -6,7 +6,7 @@
 
 [SharePoint Framework Extensions Samples & Tutorial Materials](https://github.com/SharePoint/sp-dev-fx-extensions)
 
-# Contents
+## Contents
 
 SPFx Overview
 
