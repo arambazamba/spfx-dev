@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Elements xmlns="http://schemas.microsoft.com/sharepoint/">
     <ClientSideComponentInstance
-        Title="HelloWorld"
+        Title="LvcmdSet"
         Location="ClientSideExtension.ListViewCommandSet.CommandBar"
         ListTemplateId="100"
         Properties="{&quot;sampleTextOne&quot;:&quot;One item is selected in the list.&quot;, &quot;sampleTextTwo&quot;:&quot;This command is always visible.&quot;}"
-        ComponentId="b792d8d6-0d18-45c9-872c-6e7bdee85961" />
+        ComponentId="3e85763a-c4c5-4b4d-9acc-0ab55a2064a5" />
 </Elements>

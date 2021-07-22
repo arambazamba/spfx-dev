@@ -6,7 +6,7 @@
     "default": {
       "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Shared%20Documents/Forms/AllItems.aspx",
       "customActions": {
-        "b792d8d6-0d18-45c9-872c-6e7bdee85961": {
+        "3e85763a-c4c5-4b4d-9acc-0ab55a2064a5": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "sampleTextOne": "One item is selected in the list",
@@ -15,10 +15,10 @@
         }
       }
     },
-    "helloWorld": {
+    "lvcmdSet": {
       "pageUrl": "https://integrationsonline.sharepoint.com/sites/M365Dev/Shared%20Documents/Forms/AllItems.aspx",
       "customActions": {
-        "b792d8d6-0d18-45c9-872c-6e7bdee85961": {
+        "3e85763a-c4c5-4b4d-9acc-0ab55a2064a5": {
           "location": "ClientSideExtension.ListViewCommandSet.CommandBar",
           "properties": {
             "sampleTextOne": "One item is selected in the list",
