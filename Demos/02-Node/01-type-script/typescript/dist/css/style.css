@@ -1,0 +1,45 @@
+.topMenu {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  background-color: rgb(63, 63, 221);
+  color: white;
+  font-size: 1.5rem;
+  min-width: 800px;
+}
+
+.topMenu div {
+  margin: 0.5rem;
+  cursor: pointer;  
+}
+
+.topMenu div:hover {
+  text-decoration: underline;
+}
+
+#workbench {
+  background-color: lavender;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+}
+
+#heading{
+  margin-bottom: 1rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid black;
+}
+
+ul{
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+li {
+  cursor: pointer;
+  margin: 0.5rem 0;
+  list-style-type: none;
+}
+
+li:hover {
+  text-decoration: underline;
+}
