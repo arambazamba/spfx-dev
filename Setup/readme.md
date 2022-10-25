@@ -6,6 +6,8 @@ The following setup script are provided:
 - setup-node-14.ps1
 - setup-node-16.ps1
 
+If you are unsure about what Node.js version to use check [SharePoint Framework development tools and libraries compatibility](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/compatibility) or use [Node Version Manager for Winodws](https://github.com/coreybutler/nvm-windows) to be able the switch between different Node.js versions.
+
 ---
 
 ## Fork & Clone Class Repo and set Github requirements
