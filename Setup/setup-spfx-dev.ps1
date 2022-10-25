@@ -6,12 +6,12 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://cho
 # Install Software
 choco install googlechrome -y
 choco install vscode -y
-choco install dotnet-5.0-sdk -y
+choco install dotnet-6.0-sdk -y
+choco install nodejs-lts --version=16.10.0 -y
 choco install git -y
-choco install gitextensions -y
+choco install gh -y
 choco install azure-cli -y
-choco install azure-functions-core-tools-3 --params="'/x64:true'" -y
-choco install azurepowershell -y
+choco install azure-functions-core-tools-4 --params="'/x64:true'" -y
 choco install postman -y
 choco install nvm
 choco install ngrok -y
@@ -24,8 +24,6 @@ dotnet tool install -g Microsoft.dotnet-httprepl
 
 # Intall VS Code Extensions
 code --install-extension ms-dotnettools.csharp
-code --install-extension msjsdiag.debugger-for-chrome
-code --install-extension msjsdiag.debugger-for-edge
 code --install-extension ms-vscode.powershell
 code --install-extension ms-vscode.azurecli
 code --install-extension ms-vscode.azure-account
@@ -43,12 +41,6 @@ code --install-extension eliostruyf.spfx-snippets
 code --install-extension TeamsDevApp.ms-teams-vscode-extension
 code --install-extension eliostruyf.vscode-msgraph-autocomplete
 
-# Install Node
-
-nvm install 12.20.0
-nvm install 10.22.0
-nvm use 12.20.0
-
 # Base Toolset M365 Related
 npm i -g webpack webpack-cli
 npm i -g gulp yo @microsoft/generator-sharepoint
@@ -57,7 +49,7 @@ npm i -g generator-teams
 npm i -g yo generator-office
 npm i -g spfx-fast-serve
 
-# SPA Frameworks
+# react spa framework
 npm i -g create-react-app
 
 # Finished Msg

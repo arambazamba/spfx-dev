@@ -1,0 +1,43 @@
+{
+  "skills": [
+    {
+      "id": "123",
+      "name": "RxJs",
+      "completed": false
+    },
+    {
+      "id": "456",
+      "name": "NgRx",
+      "completed": false
+    },
+    {
+      "id": "223",
+      "name": "Angular",
+      "completed": true
+    },
+    {
+      "id": "436",
+      "name": "TypeScript",
+      "completed": true
+    },
+    {
+      "name": "Container",
+      "completed": false,
+      "id": "HIyBjAr"
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "mail": "alexander.pajer@integrations.at"
+    },
+    {
+      "id": 2,
+      "mail": "andreas.lengauer@integrations.at"
+    },
+    {
+      "id": 3,
+      "mail": "giro.thegalgo@integrations.at"
+    }
+  ]
+}

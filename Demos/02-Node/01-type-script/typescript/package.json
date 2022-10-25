@@ -1,0 +1,36 @@
+{
+  "name": "typescript",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "webpack-watch": "webpack -d --watch",
+    "serve": "http-server --path ./src/ -o"
+  },
+  "dependencies": {
+    "axios": "1.0.0",
+    "date-fns": "2.29.3",
+    "linqts": "1.14.4",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.14",
+    "@types/lodash": "^4.14.186",
+    "@types/node": "~18.11.5",   
+    "autoprefixer": "^10.4.12",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "extract-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.6.1",
+    "node-sass": "^7.0.3",
+    "postcss-loader": "^7.0.1",
+    "sass-loader": "^13.1.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
