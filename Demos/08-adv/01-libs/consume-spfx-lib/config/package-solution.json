@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "consume-spfx-lib-client-side-solution",
+    "id": "2fda0a96-f554-4f64-80be-5924cdba873a",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.15.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "consume-spfx-lib description"
+      },
+      "longDescription": {
+        "default": "consume-spfx-lib description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "consume-spfx-lib Feature",
+        "description": "The feature that activates elements of the consume-spfx-lib solution.",
+        "id": "b6953306-26a1-42ff-97c4-2bd1a214884f",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/consume-spfx-lib.sppkg"
+  }
+}

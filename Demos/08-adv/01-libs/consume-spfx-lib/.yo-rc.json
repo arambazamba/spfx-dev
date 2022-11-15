@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "version": "1.15.2",
+    "libraryName": "consume-spfx-lib",
+    "libraryId": "2fda0a96-f554-4f64-80be-5924cdba873a",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "consume-spfx-lib",
+    "solutionShortDescription": "consume-spfx-lib description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}

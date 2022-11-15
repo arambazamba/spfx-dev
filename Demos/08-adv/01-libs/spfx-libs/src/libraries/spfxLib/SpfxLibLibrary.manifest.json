@@ -1,0 +1,9 @@
+{
+  "id": "54c4a216-84cc-416a-8c72-c7b374c663de",
+  "alias": "SpfxLibLibrary",
+  "componentType": "Library",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2
+}
