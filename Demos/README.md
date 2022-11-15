@@ -104,8 +104,6 @@ Consuming SharePoint Data
 
 - CSOM vs. REST Api vs. PnP JS
 
-- Mocking Data for Local Workbench
-
 - SPFx Create, Read, Update & Delete using CSOM, REST, PnP JS
 
 - CAML Queries Executing CAML Queries from SPFx
@@ -134,18 +132,6 @@ Customizing the User Interface
 
 - Using PnP SPFx React Controls
 
-Using JavaScript Frameworks & Plugins with SPFx
-
-- Importing Libraries and using Types
-
-- Using jQuery & Other JavaScript Plugins
-
-- Migrating existing JavaScript Solutions
-
-- Using Angular JS in SPFx
-
-- Scaffolding Projects that use Vue.js
-
 SharePoint Framework Extensions
 
 - What are SharePoint Framework Extensions
@@ -157,6 +143,18 @@ SharePoint Framework Extensions
 - Customize the Display of Lists using FieldCustomizers
 
 - Use Command Sets to trigger Actions
+
+Advanced Topics: Libraries, Viva Connections & Adaptive Cards
+
+- Using Libraries in SPFx
+
+- Introduction to Viva Connections
+
+- Using Viva Connections in SPFx
+
+- Introduction to Adaptive Cards
+
+- Using Adaptive Cards in SPFx
 
 Publishing SPFx WebParts
 
@@ -172,13 +170,9 @@ Publishing SPFx WebParts
 
 - Maintaining & Updating SPFx Solutions using Office 365 CLI
 
-Extending Micrsoft Teams
+Introduction to extending Micrsoft Teams
 
 - A Developer Introduction to Teams
-
-- Teams Graph API
-
-- App Studio for Teams
 
 - Overview Tabs, Bots, Connectors, Cards
 
