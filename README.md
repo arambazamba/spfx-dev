@@ -2,17 +2,16 @@
 
 Companion Material for Class Delivery by [Alexander Pajer](https://www.integrations.at/kontakt.aspx) containing:
 
-- [Requirements / Tooling](./Tooling)
-  - [Register Azure Pass](./Tooling/05-AzurePass)
-  - [Microsoft 365 Tenant](./Tooling/07-M365Tenant)
-  - [Git & GitHub Basics](./Tooling/01-Git)
-  - [Visual Studio Code Intro](./Tooling/02-VSCode)
-  - [Document Repos using Markdown](./Tooling/03-Markdown)
-  - [Using Azure CLI](./Tooling/04-CLI)
-- [Instructor Demos](./Demos)
-- [Guided Scripts to setup an Azure hosted Development & Lab VM](./Setup)
-  - [Base Dev Environment Setup inkluding Visual Studio Code Extensions](./Setup/#basics)
-- [Labs](./Labs)
+- [Requirements / Tooling](./tooling)
+  - [Setup Microsoft 365 Tenant](./tooling/05-m365-tenant)
+  - [Git & GitHub Basics](./tooling/01-git)
+  - [Visual Studio Code Intro](./tooling/02-code)
+  - [Document Repos using Markdown](./tooling/03-markdown)
+  - [Using Azure CLI](./tooling/04-cli)
+- [Instructor Demos](./demos)
+- [Guided Scripts to setup an Azure hosted Development & Lab VM](./setup)
+  - [Base Dev Environment Setup inkluding Visual Studio Code Extensions](./setup/#basics)
+- [Labs](./labs)
 
 ## Required Cloud Ressources
 
