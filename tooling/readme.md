@@ -1,6 +1,7 @@
 # Tooling
 
-- [GitHub](./01-Git)
-- [Visual Studio Code](./02-VSCode)
-- [Markdown](./03-Markdown)
-- [Azure CLI](./04-CLI)
+- [GitHub](./01-git)
+- [Visual Studio Code](./02-code)
+- [Markdown](./03-markdown)
+- [Azure CLI](./04-cli)
+- [Setup Microsoft 365 Teanant](./05-m365-tenant)
