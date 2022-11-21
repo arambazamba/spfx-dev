@@ -1,3 +1,3 @@
-# Links & Ressources
+# Building Microsoft Teams Tabs using SharePoint Framework
 
-[App Studio for Teams Getting Started](https://docs.microsoft.com/en-us/microsoftteams/platform/get-started/get-started-app-studio)
+[Building Microsoft Teams Tabs using SharePoint Framework](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/integrate-with-teams-introduction)
