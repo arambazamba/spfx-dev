@@ -63,6 +63,8 @@ gulp package-solution [--ship]
 
 Deploy *.sppkg to app catalog
 
+> Notes: The required Node version depends on the SPFx version. See [here](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/compatibility) for details.
+
 ## REST Client
 
 Use [Postman](https://www.getpostman.com/)

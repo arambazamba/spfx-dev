@@ -1,3 +1,3 @@
 ## Labs
 
-[Build JavaScript applications with Node.js](https://docs.microsoft.com/en-us/learn/paths/build-javascript-applications-nodejs/)
+[Create a new Node.js project and work with dependencies](https://learn.microsoft.com/en-us/training/modules/create-nodejs-project-dependencies/)
