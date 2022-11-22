@@ -1,0 +1,21 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "d2c4a1d7-91d8-4cee-9b54-411d094a8640",
+  "alias": "PnPjsWpWebPart",
+  "componentType": "WebPart",
+  "version": "*",
+  "manifestVersion": 2,
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart"],
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70",
+    "group": { "default": "Other" },
+    "title": { "default": "PnPJS-WP" },
+    "description": { "default": "PnPJS-WP description" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "description": "PnPJS-WP"
+    }
+  }]
+}

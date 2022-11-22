@@ -1,13 +1,12 @@
 import { Version } from '@microsoft/sp-core-library';
 import { IPropertyPaneConfiguration, PropertyPaneTextField } from '@microsoft/sp-property-pane';
 import { BaseClientSideWebPart } from '@microsoft/sp-webpart-base';
-import { IReadonlyTheme } from '@microsoft/sp-component-base';
 import { escape } from '@microsoft/sp-lodash-subset';
 
 import styles from './PnPjsWpWebPart.module.scss';
 import * as strings from 'PnPjsWpWebPartStrings';
 
-// import { sp } from '@pnp/sp';
+import { sp } from '@pnp/sp/presets/all';
 import { Skill } from './skills.model';
 
 export interface IPnPjsWpWebPartProps {
@@ -15,8 +14,6 @@ export interface IPnPjsWpWebPartProps {
 }
 
 export default class PnPjsWpWebPart extends BaseClientSideWebPart<IPnPjsWpWebPartProps> {
-    private _isDarkTheme: boolean = false;
-
     public onInit(): Promise<void> {
         return super.onInit().then((_) => {
             sp.setup({
@@ -28,37 +25,22 @@ export default class PnPjsWpWebPart extends BaseClientSideWebPart<IPnPjsWpWebPar
 
     public render(): void {
         this.domElement.innerHTML = `
-    <div class="${styles.pnPjsWp}">
-        <div class="${styles.container}">
-        <div class="${styles.row}">
-            <div class="${styles.column}">
-            <span class="${styles.title}">Skills using PnPJS</span>
-            <div id="skills"></div>  
+        <div class="${styles.pnPjsWp}">
+            <div class="${styles.container}">
+            <div class="${styles.row}">
+                <div class="${styles.column}">
+                <span class="${styles.title}">Skills using PnPJS</span>
+                <div id="skills"></div>  
+                </div>
             </div>
-        </div>
-        </div>
-    </div>`;
+            </div>
+        </div>`;
     }
 
     protected async getItems(): Promise<void> {
         const skills: Skill[] = await sp.web.lists.getByTitle('Skills').items.getAll();
         for (let sk of skills) {
             document.querySelector('#skills').insertAdjacentHTML('beforeend', `<div>${sk.Title} </div>`);
-        }
-    }
-
-    protected onThemeChanged(currentTheme: IReadonlyTheme | undefined): void {
-        if (!currentTheme) {
-            return;
-        }
-
-        this._isDarkTheme = !!currentTheme.isInverted;
-        const { semanticColors } = currentTheme;
-
-        if (semanticColors) {
-            this.domElement.style.setProperty('--bodyText', semanticColors.bodyText || null);
-            this.domElement.style.setProperty('--link', semanticColors.link || null);
-            this.domElement.style.setProperty('--linkHovered', semanticColors.linkHovered || null);
         }
     }
 

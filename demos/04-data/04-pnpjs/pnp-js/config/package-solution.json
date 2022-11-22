@@ -2,17 +2,37 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "pnp-js-client-side-solution",
-    "id": "3cdb2b47-d1d5-4fff-9f88-fbb213d2f972",
+    "id": "599b7306-e335-494d-b714-e360bc43a382",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
       "name": "",
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": ""
-    }
+      "mpnId": "Undefined-1.16.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "pnp-js description"
+      },
+      "longDescription": {
+        "default": "pnp-js description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "pnp-js Feature",
+        "description": "The feature that activates elements of the pnp-js solution.",
+        "id": "72791368-4707-4e4f-a5f6-3af99ee16b30",
+        "version": "1.0.0.0"
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/pnp-js.sppkg"
