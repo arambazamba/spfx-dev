@@ -21,7 +21,7 @@ export default class RestCrudWpWebPart extends BaseClientSideWebPart<IRestCrudWp
     private listItemEntityTypeFullName: string;
 
     protected onInit(): Promise<void> {
-        return this.getLists().then((lists) => {
+        return this.getListsForProps().then((lists) => {
             this.listOptions = lists.map((list) => {
                 return {
                     key: list.Id,
@@ -31,7 +31,7 @@ export default class RestCrudWpWebPart extends BaseClientSideWebPart<IRestCrudWp
         });
     }
 
-    private getLists(): Promise<any> {
+    private getListsForProps(): Promise<any> {
         if (Environment.type !== EnvironmentType.Local) {
             const url: string = this.context.pageContext.web.absoluteUrl + `/_api/web/lists?$filter=Hidden eq false`;
             return this.context.spHttpClient
@@ -182,7 +182,7 @@ export default class RestCrudWpWebPart extends BaseClientSideWebPart<IRestCrudWp
     private getListItems(): Promise<ListItem[]> {
         return this.context.spHttpClient
             .get(
-                this.context.pageContext['web']['absoluteUrl'] + `/_api/web/lists/GetByTitle('${this.properties.listName}')/items?$select=Id,Title`,
+                this.context.pageContext.web.absoluteUrl + `/_api/web/lists/GetByTitle('${this.properties.listName}')/items?$select=Id,Title`,
                 SPHttpClient.configurations.v1
             )
             .then((response: SPHttpClientResponse): Promise<any> => {
