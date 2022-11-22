@@ -62,7 +62,7 @@ export default class SpFxPropsWebPart extends BaseClientSideWebPart<ISpFxPropsWe
               <p class="ms-font-l ms-fontColor-white">Customize SharePoint experiences using Web Parts.</p>
               <p class="ms-font-l ms-fontColor-white">${escape(this.properties.description)}</p>
               <a href="https://aka.ms/spfx" class="${styles.button}">
-                <span class="${styles.label}">Learn more</span>
+                <span class="${styles.label}">Learn less</span>
               </a>
 
               <p class="ms-font-l ms-fontColor-white">Textbox value: ${this.properties.textboxField}</p>

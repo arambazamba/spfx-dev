@@ -6,7 +6,7 @@ export class TypesDemos {
         var myname: string = 'Giro';
 
         //Numbers
-        var age: number;
+        var age: number = ;
         var weight: number = 83.12;
         var dogWeight = 25.4;
         // dogWeight = "heavy"
@@ -29,7 +29,6 @@ export class TypesDemos {
         var dogName: string = 'Giro';
         var otherDogName = 'Soi';
         var myString = 'ten';
-
         var strings: Array<string> = ['hubert', 'Sam'];
         strings.push('Hans');
         //strings[1] = 1337; // compile time error
@@ -203,10 +202,11 @@ export class TypesDemos {
 
         for (let i in list) {
             console.log(i); // "0", "1", "2", -> for ... in loop returns index
+            console.log(list[i])
         }
 
-        for (let i of list) {
-            console.log(i); // "a", "b", "c"  -> for ... of loop returns element
+        for (let item of list) {
+            console.log(item); // "a", "b", "c"  -> for ... of loop returns element
         }
 
         // array destructuring
