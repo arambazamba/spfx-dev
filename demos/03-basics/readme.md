@@ -6,6 +6,8 @@
 
 [Integrate web part properties with SharePoint](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/guidance/integrate-web-part-properties-with-sharepoint)
 
+[SPFx Compatibility Matrix](https://learn.microsoft.com/en-us/sharepoint/dev/spfx/compatibility)
+
 [SharePoint Framework SDK Reference](https://learn.microsoft.com/en-us/javascript/api/overview/sharepoint?view=sp-typescript-latest)
 
 ## Tools & Extensions
