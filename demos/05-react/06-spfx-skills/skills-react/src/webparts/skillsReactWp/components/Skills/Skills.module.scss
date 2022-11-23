@@ -1,0 +1,31 @@
+.container {
+  clear: both;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+}
+
+ul {
+  margin: 15px auto 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.li-skills {
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.lblNewSkill {
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.divResponse {
+  margin: 10px;
+}
