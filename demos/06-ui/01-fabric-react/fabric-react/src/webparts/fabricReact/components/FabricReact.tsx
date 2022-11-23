@@ -1,43 +1,129 @@
 import * as React from 'react';
-import styles from './FabricReact.module.scss';
-import { IFabricReactProps } from './IFabricReactProps';
-import { escape } from '@microsoft/sp-lodash-subset';
+// import styles from './FabricReact.module.scss';
+import { IFabricReactProps, IFabricReactState } from './IFabricReactProps';
+// import { escape } from '@microsoft/sp-lodash-subset';
+import {
+  Button,
+  ButtonType,
+  Nav,
+  Panel,
+  PanelType,
+} from "office-ui-fabric-react";
 
-export default class FabricReact extends React.Component<IFabricReactProps, {}> {
+export default class FabricReact extends React.Component<IFabricReactProps, IFabricReactState> {
+
+  constructor(props: IFabricReactProps) {
+    super(props);
+    this.state = {
+      showPanel: false,
+    };
+  }
+
   public render(): React.ReactElement<IFabricReactProps> {
-    const {
-      description,
-      isDarkTheme,
-      environmentMessage,
-      hasTeamsContext,
-      userDisplayName
-    } = this.props;
+    // const {
+    //   description,
+    //   isDarkTheme,
+    //   environmentMessage,
+    //   hasTeamsContext,
+    //   userDisplayName
+    // } = this.props;
 
     return (
-      <section className={`${styles.fabricReact} ${hasTeamsContext ? styles.teams : ''}`}>
-        <div className={styles.welcome}>
-          <img alt="" src={isDarkTheme ? require('../assets/welcome-dark.png') : require('../assets/welcome-light.png')} className={styles.welcomeImage} />
-          <h2>Well done, {escape(userDisplayName)}!</h2>
-          <div>{environmentMessage}</div>
-          <div>Web part property value: <strong>{escape(description)}</strong></div>
+      <div>
+        <div className="ms-BasicButtonsExample">
+          <Button data-automation-id="test">Normal button</Button>
+          <Button
+            data-automation-id="test"
+            buttonType={ButtonType.primary}
+            onClick={this._buttonOnClickHandler.bind(this)}
+          >
+            Primary button
+          </Button>
         </div>
-        <div>
-          <h3>Welcome to SharePoint Framework!</h3>
-          <p>
-            The SharePoint Framework (SPFx) is a extensibility model for Microsoft Viva, Microsoft Teams and SharePoint. It&#39;s the easiest way to extend Microsoft 365 with automatic Single Sign On, automatic hosting and industry standard tooling.
-          </p>
-          <h4>Learn more about SPFx development:</h4>
-          <ul className={styles.links}>
-            <li><a href="https://aka.ms/spfx" target="_blank" rel="noreferrer">SharePoint Framework Overview</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-graph" target="_blank" rel="noreferrer">Use Microsoft Graph in your solution</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-teams" target="_blank" rel="noreferrer">Build for Microsoft Teams using SharePoint Framework</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-viva" target="_blank" rel="noreferrer">Build for Microsoft Viva Connections using SharePoint Framework</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-store" target="_blank" rel="noreferrer">Publish SharePoint Framework applications to the marketplace</a></li>
-            <li><a href="https://aka.ms/spfx-yeoman-api" target="_blank" rel="noreferrer">SharePoint Framework API reference</a></li>
-            <li><a href="https://aka.ms/m365pnp" target="_blank" rel="noreferrer">Microsoft 365 Developer Community</a></li>
-          </ul>
+
+        <div className="ms-NavExample-LeftPane">
+          <Nav
+            groups={[
+              {
+                links: [
+                  {
+                    name: "Home",
+                    url: "http://example.com",
+                    links: [
+                      {
+                        name: "Activity",
+                        url: "http://msn.com",
+                      },
+                      {
+                        name: "News",
+                        url: "http://msn.com",
+                      },
+                    ],
+                    isExpanded: true,
+                  },
+                  {
+                    name: "Documents",
+                    url: "http://example.com",
+                    isExpanded: true,
+                  },
+                  { name: "Pages", url: "http://msn.com" },
+                  { name: "Notebook", url: "http://msn.com" },
+                  {
+                    name: "MSN",
+                    url: "http://msn.com",
+                  },
+                  {
+                    name: "Edit Link",
+                    url: "http://example.com",
+                    iconClassName: "ms-Icon--Edit",
+                  },
+                  {
+                    name: "Edit",
+                    url: "#",
+                    onClick: this._navOnClickHandler,
+                    icon: "Edit",
+                  },
+                ],
+              },
+            ]}
+          />
         </div>
-      </section>
+
+        <div className="ms-PanelExample">
+          <Button
+            description="Opens the Sample Panel"
+            onClick={this._showPanel.bind(this)}
+          >
+            Open Panel
+          </Button>
+          <Panel
+            isOpen={this.state.showPanel}
+            type={PanelType.smallFixedFar}
+            onDismiss={this._closePanel.bind(this)}
+            headerText="Panel - Small, right-aligned, fixed"
+          >
+            <span className="ms-font-m">Content goes here.</span>
+          </Panel>
+        </div>
+      </div>
     );
+  }
+
+  private _buttonOnClickHandler() {
+    alert("You clicked the primary button");
+    return false;
+  }
+
+  private _navOnClickHandler() {
+    alert("You clicked the edit button in navigation");
+    return false;
+  }
+
+  private _showPanel() {
+    this.setState({ showPanel: true });
+  }
+
+  private _closePanel() {
+    this.setState({ showPanel: false });
   }
 }
