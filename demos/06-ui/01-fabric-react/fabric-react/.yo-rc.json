@@ -1,11 +1,20 @@
 {
   "@microsoft/generator-sharepoint": {
-    "version": "1.11.0",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.15.0",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.4.1"
+    },
+    "version": "1.16.0",
     "libraryName": "fabric-react",
-    "libraryId": "5f076eb8-3669-4e3e-8211-2b276ee39aba",
+    "libraryId": "b585e8fb-6876-48e6-8dd9-4ae98389249a",
     "environment": "spo",
     "packageManager": "npm",
-    "isCreatingSolution": false,
+    "solutionName": "fabric-react",
+    "solutionShortDescription": "fabric-react description",
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "componentType": "webpart"
   }
