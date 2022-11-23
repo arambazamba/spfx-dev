@@ -1,4 +1,1 @@
-# Introduction to Teams Development
-
-- SPFx Teams Tab
-- 
+[Build Microsoft Teams customization using the SharePoint Framework](https://learn.microsoft.com/en-us/training/modules/sharepoint-spfx-teams-dev/)
