@@ -11,7 +11,7 @@ export interface SkillListProps {
 
 export interface SkillListState {
 	skills: Skill[];
-	// skillToAdd: string;
+	// skillToAdd: string; -> moved to addSkill component
 }
 
 export default class SkillList extends React.Component<SkillListProps, SkillListState> {
