@@ -9,10 +9,19 @@
           "manifest": "./src/webparts/fabricReact/FabricReactWebPart.manifest.json"
         }
       ]
+    },
+    "document-card-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/documentCardWp/DocumentCardWpWebPart.js",
+          "manifest": "./src/webparts/documentCardWp/DocumentCardWpWebPart.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "FabricReactWebPartStrings": "lib/webparts/fabricReact/loc/{locale}.js"
+    "FabricReactWebPartStrings": "lib/webparts/fabricReact/loc/{locale}.js",
+    "DocumentCardWpWebPartStrings": "lib/webparts/documentCardWp/loc/{locale}.js"
   }
 }
