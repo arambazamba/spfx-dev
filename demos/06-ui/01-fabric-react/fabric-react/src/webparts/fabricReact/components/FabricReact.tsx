@@ -1,7 +1,7 @@
-import * as React from "react";
-import styles from "./FabricReact.module.scss";
-import { IFabricReactProps } from "./IFabricReactProps";
-import { escape } from "@microsoft/sp-lodash-subset";
+import * as React from 'react';
+// import styles from './FabricReact.module.scss';
+import { IFabricReactProps, IFabricReactState } from './IFabricReactProps';
+// import { escape } from '@microsoft/sp-lodash-subset';
 import {
   Button,
   ButtonType,
@@ -10,11 +10,9 @@ import {
   PanelType,
 } from "office-ui-fabric-react";
 
-export default class FabricReact extends React.Component<
-  IFabricReactProps,
-  any
-> {
-  constructor(props) {
+export default class FabricReact extends React.Component<IFabricReactProps, IFabricReactState> {
+
+  constructor(props: IFabricReactProps) {
     super(props);
     this.state = {
       showPanel: false,
@@ -22,6 +20,14 @@ export default class FabricReact extends React.Component<
   }
 
   public render(): React.ReactElement<IFabricReactProps> {
+    // const {
+    //   description,
+    //   isDarkTheme,
+    //   environmentMessage,
+    //   hasTeamsContext,
+    //   userDisplayName
+    // } = this.props;
+
     return (
       <div>
         <div className="ms-BasicButtonsExample">

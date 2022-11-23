@@ -1,3 +1,11 @@
 export interface IFabricReactProps {
-  description: string;
+    description: string;
+    isDarkTheme: boolean;
+    environmentMessage: string;
+    hasTeamsContext: boolean;
+    userDisplayName: string;
+}
+
+export interface IFabricReactState {
+    showPanel: boolean;
 }

@@ -1,20 +1,40 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
-    "name": "skills-react-data-client-side-solution",
-    "id": "f845bd3f-70db-42bb-bb28-1cd585d8a602",
+    "name": "skills-react-client-side-solution",
+    "id": "a2015f06-1df0-456a-abea-2e4b0f183f7a",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
       "name": "",
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": ""
-    }
+      "mpnId": "Undefined-1.16.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "skills-react description"
+      },
+      "longDescription": {
+        "default": "skills-react description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "skills-react Feature",
+        "description": "The feature that activates elements of the skills-react solution.",
+        "id": "04ba4621-2d8d-48ab-af01-c7d9453dd8f6",
+        "version": "1.0.0.0"
+      }
+    ]
   },
   "paths": {
-    "zippedPackage": "solution/skills-react-data.sppkg"
+    "zippedPackage": "solution/skills-react.sppkg"
   }
 }

@@ -3,9 +3,9 @@ import styles from "./Skills.module.scss";
 import { Skill } from "../skill";
 import { WebPartContext } from "@microsoft/sp-webpart-base";
 import { SPHttpClient } from "@microsoft/sp-http";
+
 import { DefaultButton, ButtonType } from "office-ui-fabric-react";
 import { TextField } from "office-ui-fabric-react/lib/TextField";
-import { List } from "office-ui-fabric-react/lib/List";
 
 export interface SkillProps {
   removeMsg: string;
@@ -16,11 +16,6 @@ export interface SkillProps {
 export interface SkillState {
   addSkill: string;
   skills: Skill[];
-}
-
-export interface IButtonProps {
-  disabled?: boolean;
-  checked?: boolean;
 }
 
 export class Skills extends React.Component<SkillProps, SkillState> {
@@ -113,9 +108,9 @@ export class Skills extends React.Component<SkillProps, SkillState> {
 
   private removeSkill(skill: Skill): void {
     this.removeSkillFromSP(skill).then(() => {
-      let newskills = this.state.skills.filter((i: Skill) => i !== skill);
+      let arrSkills = this.state.skills.filter((sk: Skill) => sk !== skill);
       this.setState({
-        skills: newskills,
+        skills: arrSkills,
       });
     });
   }

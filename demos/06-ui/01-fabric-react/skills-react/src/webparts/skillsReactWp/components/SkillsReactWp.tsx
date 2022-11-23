@@ -1,22 +1,15 @@
-import * as React from "react";
-import styles from "./SkillsReactV2.module.scss";
-import { ISkillsReactV2Props } from "./ISkillsReactV2Props";
-import { escape } from "@microsoft/sp-lodash-subset";
+import * as React from 'react';
+import styles from './SkillsReactWp.module.scss';
+import { ISkillsReactWpProps } from './ISkillsReactWpProps';
+// import { escape } from '@microsoft/sp-lodash-subset';
 
 import { Hello } from "./Hello/Hello";
 import { Skills } from "./Skills/Skills";
 
 const logo: string = require("./logo.svg");
 
-export default class SkillsReactV2 extends React.Component<
-  ISkillsReactV2Props,
-  any
-> {
-  constructor(props) {
-    super(props);
-  }
-
-  public render(): React.ReactElement<SkillsReactV2> {
+export default class SkillsReactWp extends React.Component<ISkillsReactWpProps, {}> {
+  public render(): React.ReactElement<ISkillsReactWpProps> {
     return (
       <div className={styles.container}>
         <div className={styles.AppHeader}>

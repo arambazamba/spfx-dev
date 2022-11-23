@@ -1,7 +1,7 @@
-import * as React from "react";
-import styles from "./DocumentCardWp.module.scss";
-import { IDocumentCardWpProps } from "./IDocumentCardWpProps";
-import { escape } from "@microsoft/sp-lodash-subset";
+import * as React from 'react';
+// import styles from './DocumentCardWp.module.scss';
+import { IDocumentCardWpProps } from './IDocumentCardWpProps';
+
 import {
   DocumentCard,
   DocumentCardPreview,
@@ -10,10 +10,9 @@ import {
   IDocumentCardPreviewProps,
 } from "office-ui-fabric-react/lib/DocumentCard";
 
-export default class DocumentCardWp extends React.Component<
-  IDocumentCardWpProps,
-  {}
-> {
+
+export default class DocumentCardWp extends React.Component<IDocumentCardWpProps, {}> {
+
   previewProps: IDocumentCardPreviewProps = {
     previewImages: [
       {
@@ -27,6 +26,14 @@ export default class DocumentCardWp extends React.Component<
   };
 
   public render(): React.ReactElement<IDocumentCardWpProps> {
+    // const {
+    //   description,
+    //   isDarkTheme,
+    //   environmentMessage,
+    //   hasTeamsContext,
+    //   userDisplayName
+    // } = this.props;
+
     return (
       <DocumentCard onClickHref="http://bing.com">
         <DocumentCardPreview {...this.previewProps} />

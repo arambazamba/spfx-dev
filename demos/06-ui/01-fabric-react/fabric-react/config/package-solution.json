@@ -2,17 +2,37 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
   "solution": {
     "name": "fabric-react-client-side-solution",
-    "id": "5f076eb8-3669-4e3e-8211-2b276ee39aba",
+    "id": "b585e8fb-6876-48e6-8dd9-4ae98389249a",
     "version": "1.0.0.0",
     "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
     "isDomainIsolated": false,
     "developer": {
       "name": "",
       "websiteUrl": "",
       "privacyUrl": "",
       "termsOfUseUrl": "",
-      "mpnId": ""
-    }
+      "mpnId": "Undefined-1.16.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "fabric-react description"
+      },
+      "longDescription": {
+        "default": "fabric-react description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "fabric-react Feature",
+        "description": "The feature that activates elements of the fabric-react solution.",
+        "id": "57a56aa7-f713-448c-91fe-42ad983f4e4e",
+        "version": "1.0.0.0"
+      }
+    ]
   },
   "paths": {
     "zippedPackage": "solution/fabric-react.sppkg"
