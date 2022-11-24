@@ -5,40 +5,39 @@ import { escape } from '@microsoft/sp-lodash-subset';
 
 export default class SpFxTeamsTab extends React.Component<ISpFxTeamsTabProps, {}> {
   public render(): React.ReactElement<ISpFxTeamsTabProps> {
-    let title: string = '';
-    let subTitle: string = '';
-    let siteTabTitle: string = '';
-  
-    if (this.props.context.sdks.microsoftTeams) {
-      // We have teams context for the web part
-      title = "Welcome to Teams!";
-      subTitle = "Building custom enterprise tabs for your business.";
-      siteTabTitle = "We are in the context of following Team: " + this.props.context.sdks.microsoftTeams.context.teamName;
-    }
-    else
-    {
-      // We are rendered in normal SharePoint context
-      title = "Welcome to SharePoint!";
-      subTitle = "Customize SharePoint experiences using Web Parts.";
-      siteTabTitle = "We are in the context of following site: " + this.props.context.pageContext.web.title;
-    }
+    const {
+      description,
+      isDarkTheme,
+      environmentMessage,
+      hasTeamsContext,
+      userDisplayName
+    } = this.props;
 
-    return (  
-      <div className="${ styles.myFirstTeamsTab }">
-        <div className="${ styles.container }">
-          <div className="${ styles.row }">
-            <div className="${ styles.column }">
-              <span className="${ styles.title }">{title}</span>
-              <p className="${ styles.subTitle }">{subTitle}</p>
-              <p className="${ styles.description }">{siteTabTitle}</p>
-              <p className="${ styles.description }">Description property value - {escape(this.props.description)}</p>
-              <a href="https://aka.ms/spfx" className="${ styles.button }">
-                <span className="${ styles.label }">Learn more</span>
-              </a>
-            </div>
-          </div>
+    return (
+      <section className={`${styles.spFxTeamsTab} ${hasTeamsContext ? styles.teams : ''}`}>
+        <div className={styles.welcome}>
+          <img alt="" src={isDarkTheme ? require('../assets/welcome-dark.png') : require('../assets/welcome-light.png')} className={styles.welcomeImage} />
+          <h2>Well done, {escape(userDisplayName)}!</h2>
+          <div>{environmentMessage}</div>
+          <div>Web part property value: <strong>{escape(description)}</strong></div>
         </div>
-      </div>
+        <div>
+          <h3>Welcome to the SharePoint Framework Teams Tab!</h3>
+          <p>
+            The SharePoint Framework (SPFx) is a extensibility model for Microsoft Viva, Microsoft Teams and SharePoint. It&#39;s the easiest way to extend Microsoft 365 with automatic Single Sign On, automatic hosting and industry standard tooling.
+          </p>
+          <h4>Learn more about SPFx development:</h4>
+          <ul className={styles.links}>
+            <li><a href="https://aka.ms/spfx" target="_blank" rel="noreferrer">SharePoint Framework Overview</a></li>
+            <li><a href="https://aka.ms/spfx-yeoman-graph" target="_blank" rel="noreferrer">Use Microsoft Graph in your solution</a></li>
+            <li><a href="https://aka.ms/spfx-yeoman-teams" target="_blank" rel="noreferrer">Build for Microsoft Teams using SharePoint Framework</a></li>
+            <li><a href="https://aka.ms/spfx-yeoman-viva" target="_blank" rel="noreferrer">Build for Microsoft Viva Connections using SharePoint Framework</a></li>
+            <li><a href="https://aka.ms/spfx-yeoman-store" target="_blank" rel="noreferrer">Publish SharePoint Framework applications to the marketplace</a></li>
+            <li><a href="https://aka.ms/spfx-yeoman-api" target="_blank" rel="noreferrer">SharePoint Framework API reference</a></li>
+            <li><a href="https://aka.ms/m365pnp" target="_blank" rel="noreferrer">Microsoft 365 Developer Community</a></li>
+          </ul>
+        </div>
+      </section>
     );
   }
 }
